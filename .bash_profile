@@ -21,4 +21,4 @@ alias ydl-140='youtube-dl -f 140'
 alias neo='neofetch'
 
 # GNU Make
-alias foo='make && ./build/main'
+alias foo='make && ./bin/main'
