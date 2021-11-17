@@ -12,9 +12,13 @@ alias cls='clear'
 # clone a repo
 alias gcl='git clone'
 
-# youtube-dl
+# youtube downloader
 alias ydl='youtube-dl'
-alias ydl-mp3='youtube-dl -x -f bestaudio'
+alias ydl-139='youtube-dl -f 139'
+alias ydl-140='youtube-dl -f 140'
 
 # neofetch
 alias neo='neofetch'
+
+# GNU Make
+alias foo='make && ./build/main'
