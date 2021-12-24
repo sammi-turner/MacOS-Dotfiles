@@ -22,3 +22,6 @@ alias neo='neofetch'
 
 # GNU Make
 alias foo='make && ./bin/main'
+
+# Anaconda Navigator
+alias an='anaconda-navigator'
