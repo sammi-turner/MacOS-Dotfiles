@@ -3,8 +3,8 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # prompt
 PS1=' \W > '
 
-# edit file
-alias edit='open -a TextEdit'
+# edit file in Text Mate
+alias edit='open -a TextMate'
 
 # clear screen
 alias cls='clear'
