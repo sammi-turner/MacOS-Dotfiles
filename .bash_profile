@@ -26,3 +26,4 @@ alias foo='make && ./bin/main'
 # Python
 alias ugp='python3 -m pip install --upgrade pip'
 alias act='source bin/activate'
+alias dea='deactivate'
