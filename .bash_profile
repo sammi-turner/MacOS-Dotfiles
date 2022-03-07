@@ -1,23 +1,23 @@
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# prompt
+# Prompt
 PS1=' \W > '
 
-# edit file in Text Mate
+# Edit file in Text Mate
 alias edit='open -a TextMate'
 
-# clear screen
+# Clear screen
 alias cls='clear'
 
-# clone a repo
+# Clone a repo
 alias gcl='git clone'
 
-# youtube downloader
-alias ydl='youtube-dl'
-alias ydl-139='youtube-dl -f 139'
-alias ydl-140='youtube-dl -f 140'
+# Download with yt-dlp
+alias dwebm='yt-dlp'
+alias dmp4='yt-dlp -f mp4'
+alias dmp3='yt-dlp -x --audio-format mp3'
 
-# neofetch
+# Neofetch
 alias neo='neofetch'
 
 # GNU Make
