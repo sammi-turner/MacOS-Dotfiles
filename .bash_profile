@@ -24,6 +24,9 @@ alias neo='neofetch'
 alias foo='make && ./bin/main'
 
 # Python
+alias run='python3 app.py'
+alias env='virtualenv .'
+alias req='pip install -r requirements.txt'
 alias ugp='python3 -m pip install --upgrade pip'
 alias act='source bin/activate'
 alias dea='deactivate'
