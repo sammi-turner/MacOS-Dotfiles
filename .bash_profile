@@ -30,3 +30,8 @@ alias req='pip install -r requirements.txt'
 alias ugp='python3 -m pip install --upgrade pip'
 alias act='source bin/activate'
 alias dea='deactivate'
+
+# Crystal
+alias cr='crystal run app.cr'
+alias cb='crystal build app.cr --no-debug'
+alias cbr='crystal build app.cr --no-debug --release'
