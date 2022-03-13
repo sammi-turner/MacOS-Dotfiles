@@ -32,6 +32,6 @@ alias act='source bin/activate'
 alias dea='deactivate'
 
 # Crystal
-alias cr='crystal run app.cr'
-alias cb='crystal build app.cr --no-debug'
-alias cbr='crystal build app.cr --no-debug --release'
+alias cr='crystal run'
+alias cb='crystal build --no-debug'
+alias cbr='crystal build --no-debug --release'
