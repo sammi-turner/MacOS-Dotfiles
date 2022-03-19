@@ -8,7 +8,7 @@ Installing [Oh My ZSH!](https://ohmyz.sh/) will wipe your existing .zshrc file a
 
 So install Oh My ZSH! first, then replace the default config with the one in this repo.
 
-The zsh theme is set to "agnoster", but the config here is slighly different than the default one.
+The zsh theme is set to "agnoster", but the agnoster config file here is slighly different than the default one.
 
 Replace the default config with the new one at
 
