@@ -1,3 +1,3 @@
 # MacOS-Dotfiles
 
-Very simple bash, vim, and terminal profiles.
+Very simple zsh, bash, vim, and terminal set ups. 
