@@ -35,3 +35,7 @@ $ chsh -s /bin/bash
 ```
 
 Then enter your password.
+
+## Legacy Mac Terminal
+
+This repo includes a folder of [terminal profiles](https://support.apple.com/en-gb/guide/terminal/trml107/mac) for use with the legacy mac terminal. 
