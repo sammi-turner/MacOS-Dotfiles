@@ -2,7 +2,7 @@
 
 Very simple zsh, bash, vim, iterm2, and legacy mac terminal set ups.
 
-## Installing Oh My ZSH! on iterm2
+## Installing Oh My ZSH! for use on iterm2
 
 Installing [Oh My ZSH!](https://ohmyz.sh/) will wipe your existing .zshrc file and replace it with a default one. 
 
