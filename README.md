@@ -1,6 +1,6 @@
 # MacOS-Dotfiles
 
-Very simple zsh, bash, vim, iterm2, and legacy mac terminal set ups.
+Very simple zsh, bash, vim, iterm2, and mac terminal set ups.
 
 ## Installing Oh My ZSH! for use on iterm2
 
@@ -36,6 +36,6 @@ $ chsh -s /bin/bash
 
 then enter your password.
 
-## Terminal color themes
+## Terminal color profiles
 
-This repo includes a folder of terminal color profiles for both iterm2 and the legacy mac terminal.
+This repo includes a folder of color profiles for both iterm2 and mac terminal.
