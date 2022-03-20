@@ -14,31 +14,27 @@ So install Oh My ZSH! first, then replace the default config with the one in thi
 
 The zsh theme on my config is set to "agnoster", but my agnoster config file is slighly different than the default.
 
-Replace the default config with my new one at
+Replace the default config with mine at
 
 ```
 .oh-my-zsh/themes/agnoster.zsh-theme
 ```
 
-## Change the default shell to Zsh
+## To change your default shell
 
-Enter
+to Zsh, enter
 
 ```
 $ chsh -s /bin/zsh
 ```
 
-Then enter your password.
-
-## Change the default shell to Bash
-
-Enter
+or to Bash, enter
 
 ```
 $ chsh -s /bin/bash
 ```
 
-Then enter your password.
+then enter your password.
 
 ## Legacy Mac Terminal
 
