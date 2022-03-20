@@ -36,6 +36,6 @@ $ chsh -s /bin/bash
 
 then enter your password.
 
-## Legacy Mac Terminal
+## Terminal color themes
 
-This repo includes a folder of [terminal profiles](https://support.apple.com/en-gb/guide/terminal/trml107/mac) for use with the legacy mac terminal. 
+This repo includes a folder of terminal color profiles for both iterm2 and the legacy mac terminal.
