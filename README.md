@@ -4,13 +4,17 @@ Very simple zsh, bash, vim, iterm2, and legacy mac terminal set ups.
 
 ## Installing Oh My ZSH! for use on iterm2
 
-Installing [Oh My ZSH!](https://ohmyz.sh/) will wipe your existing .zshrc file and replace it with a default one. 
+Installing [Oh My ZSH!](https://ohmyz.sh/) will replace your existing .zshrc file with a new default file, and save the contents of your previous config to
+
+```
+.zshrc.pre-oh-my-zsh
+```
 
 So install Oh My ZSH! first, then replace the default config with the one in this repo.
 
-The zsh theme is set to "agnoster", but the agnoster config file here is slighly different than the default one.
+The zsh theme on my config is set to "agnoster", but my agnoster config file is slighly different than the default.
 
-Replace the default config with the new one at
+Replace the default config with my new one at
 
 ```
 .oh-my-zsh/themes/agnoster.zsh-theme
