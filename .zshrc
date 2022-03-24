@@ -108,12 +108,10 @@ alias cls='clear'
 
 # Git
 alias gcl='git clone'
-alias gin='git init'
-alias gad='git add'
 alias gcm='git commit -m'
-alias gbm='git branch -M'
+alias gbm='git branch -M main'
 alias gra='git remote add origin'
-alias gpo='git push -u origin'
+alias gpo='git push -u origin main'
 
 # Download with yt-dlp
 alias dwebm='yt-dlp'
