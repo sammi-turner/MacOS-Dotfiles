@@ -9,8 +9,12 @@ alias edit='open -a TextMate'
 # Clear screen
 alias cls='clear'
 
-# Clone a repo
+# Git
 alias gcl='git clone'
+alias gcm='git commit -m'
+alias gbm='git branch -M main'
+alias gra='git remote add origin'
+alias gpo='git push -u origin main'
 
 # Download with yt-dlp
 alias dwebm='yt-dlp'
