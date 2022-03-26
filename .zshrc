@@ -103,6 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # Edit file in Text Mate
 alias edit='open -a TextMate'
 
+# Edit zsh in Text Mate
+alias zrc='open -a TextMate .zshrc'
+
 # Clear screen
 alias cls='clear'
 
@@ -135,3 +138,8 @@ alias dea='deactivate'
 alias cr='crystal run'
 alias cb='crystal build --no-debug'
 alias cbr='crystal build --no-debug --release'
+
+# Function to split a video into still images
+stills() {
+	ffmpeg -i "$1".mp4 thumb%04d.jpg -hide_banner
+}
