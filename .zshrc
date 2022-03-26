@@ -135,9 +135,9 @@ alias act='source bin/activate'
 alias dea='deactivate'
 
 # Crystal
-alias cr='crystal run'
-alias cb='crystal build --no-debug'
-alias cbr='crystal build --no-debug --release'
+alias cr='crystal run app.cr'
+alias cb='crystal build --no-debug app.cr'
+alias cbr='crystal build --no-debug --release app.cr'
 
 # Function to split a video into still images
 stills() {
