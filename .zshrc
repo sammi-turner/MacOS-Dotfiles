@@ -95,38 +95,34 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Edit file in Text Mate
+# EDIT IN TEXTMATE
 alias edit='open -a TextMate'
 
-# Edit zsh in Text Mate
+# EDIT THIS FILE IN TEXT MATE
 alias zrc='open -a TextMate .zshrc'
 
-# Clear screen
+# CLEAR SCREEN
 alias cls='clear'
 
-# Git
+# GIT
 alias gcl='git clone'
 alias gaa='git add -A'
 alias gcm='git commit -m'
 alias gpu='git push -u origin main'
 
-# Download with yt-dlp
+# YT-DLP
 alias dwebm='yt-dlp'
 alias dmp4='yt-dlp -f mp4'
 alias dmp3='yt-dlp -x --audio-format mp3'
 
-# Neofetch
+# NEOFETCH
 alias neo='neofetch'
 
-# GNU Make
+# GNU MAKE
 alias foo='make && ./bin/main'
 
-# Python
+# PYTHON
 alias run='python3 app.py'
 alias env='virtualenv .'
 alias req='pip install -r requirements.txt'
@@ -134,12 +130,47 @@ alias ugp='python3 -m pip install --upgrade pip'
 alias act='source bin/activate'
 alias dea='deactivate'
 
-# Crystal
+# CRYSTAL
 alias cr='crystal run app.cr'
 alias cb='crystal build --no-debug app.cr'
 alias cbr='crystal build --no-debug --release app.cr'
 
-# Function to split a video into still images
+# SPLIT
+# This function uses ffmpeg.
+# It generates a series of jpg images from an mp4 file.
+# Its parameter is the file name.
 stills() {
 	ffmpeg -i "$1".mp4 thumb%04d.jpg -hide_banner
+}
+
+# PLAY
+# This function uses ffmpeg.
+# It plays an mp4 video with the devices default media player.
+# Its parameters are the start time, the end time and the file name.
+play() {
+	ffplay -ss "$1" -t "$2" "$3".mp4
+}
+
+# PREGIF
+# This function uses ffmpeg.
+# It reduces an mp4's size, slows its frame rate, and removes its audio.
+# Its paramters are the input file name, the start time, the duration in seconds and the output filename.
+pregif() {
+	ffmpeg -i "$1".mp4 -ss "$2" -t "$3" -vf "fps=10,scale=320:-1" -an "$4".mp4
+}
+
+# MAKEGIF
+# This function uses ffmpeg and imagemagick.
+# It turns a 'pregif' mp4 into an animated gif.
+# Its parameter is the file name.
+makegif() {
+	ffmpeg -i "$1".mp4 -vf "fps=10,scale=320:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers optimize "$1".gif
+}
+
+# MYGIF
+# This function combines pregif and makegif.
+# Its parameters are the mp4 file name, the start time, the duration in seconds and the gif file name.
+mygif() {
+	pregif "$1" "$2" "$3" "$4";
+	makegif "$4"
 }
