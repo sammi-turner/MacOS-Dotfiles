@@ -175,6 +175,6 @@ makegif() {
 # $4 is the gif file name.
 mygif() {
 	pregif "$1" "$2" "$3" "$4";
-	makegif "$4"
-	rm "$4".mp4
+	makegif "$4";
+	rm "$4".mp4;
 }
