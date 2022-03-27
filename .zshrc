@@ -135,10 +135,10 @@ alias cr='crystal run app.cr'
 alias cb='crystal build --no-debug app.cr'
 alias cbr='crystal build --no-debug --release app.cr'
 
-# SPLIT
+# STILLS
 # This function uses ffmpeg.
 # It generates a series of jpg images from an mp4 file.
-# Its parameter is the file name.
+# Its @1 parameter is the file name.
 stills() {
 	ffmpeg -i "$1".mp4 thumb%04d.jpg -hide_banner
 }
@@ -153,24 +153,28 @@ play() {
 
 # PREGIF
 # This function uses ffmpeg.
-# It reduces an mp4's size, slows its frame rate, and removes its audio.
-# Its paramters are the input file name, the start time, the duration in seconds and the output filename.
+# It is a helper function called by mygif.
 pregif() {
 	ffmpeg -i "$1".mp4 -ss "$2" -t "$3" -vf "fps=10,scale=320:-1" -an "$4".mp4
 }
 
 # MAKEGIF
 # This function uses ffmpeg and imagemagick.
-# It turns a 'pregif' mp4 into an animated gif.
-# Its parameter is the file name.
+# It is a helper function called by mygif.
 makegif() {
 	ffmpeg -i "$1".mp4 -vf "fps=10,scale=320:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers optimize "$1".gif
 }
 
 # MYGIF
-# This function combines pregif and makegif.
-# Its parameters are the mp4 file name, the start time, the duration in seconds and the gif file name.
+# This function uses ffmpeg and imagemagick.
+# It converts a section of an mp4 video into a gif.
+# It has four parameters.
+# $1 is the mp4 file name.
+# $2 is the start time in HH:MM:SS format.
+# $3 is the duration of the gif in seconds.
+# $4 is the gif file name.
 mygif() {
 	pregif "$1" "$2" "$3" "$4";
 	makegif "$4"
+	rm "$4".mp4
 }
