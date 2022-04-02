@@ -138,7 +138,7 @@ alias cbr='crystal build --no-debug --release app.cr'
 # STILLS
 # This function uses ffmpeg.
 # It generates a series of jpg images from an mp4 file.
-# Its @1 parameter is the file name.
+# Its $1 parameter is the file name.
 stills() {
 	ffmpeg -i "$1".mp4 thumb%04d.jpg -hide_banner
 }
@@ -147,10 +147,10 @@ stills() {
 # This function uses ffmpeg.
 # It produces an mp4 video from a larger mp4 file.
 # It has four parameters.
-# @1 is the input file name.
-# @2 is the start time in HH:MM:SS format.
-# @3 is the clip duration in seconds.
-# @4 is the output file name.
+# $1 is the input file name.
+# $2 is the start time in HH:MM:SS format.
+# $3 is the clip duration in seconds.
+# $4 is the output file name.
 clip() {
 	ffmpeg -i "$1".mp4 -ss "$2" -t "$3" "$4".mp4
 }
@@ -158,11 +158,13 @@ clip() {
 # PLAY
 # This function uses ffmpeg.
 # It plays an mp4 video with the devices default media player.
-# Its parameters are the start time, the end time and the file name.
+# It has three parameters.
+# $1 is the start time.
+# $2 is the end time.
+# $3 is the file name.
 play() {
 	ffplay -ss "$1" -t "$2" "$3".mp4
 }
-
 # PRE GIF
 # This function uses ffmpeg.
 # It is a helper function called by get_gif.
