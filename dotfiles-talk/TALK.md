@@ -10,7 +10,7 @@ Money was tight for me back then and my Windows 7 desktop machine was crashing w
 
 "Turn it off and turn it on again" just didn't cut the mustard any more.
 
-I was also getting nag alerts to install Windows 10, but my poor Dell clearly wasn't up to that level of trauma.
+I was also getting nag alerts to install Windows 10, but my poor Dell clearly wasn't set up for that level of trauma.
 
 I was too tight to throw the machine out, so I looked online for ways in which I might breathe new life into it instead.
 
