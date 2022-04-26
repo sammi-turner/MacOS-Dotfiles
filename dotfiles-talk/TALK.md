@@ -16,7 +16,7 @@ I was too tight to throw the machine out, so I looked online for ways in which I
 
 I found a YouTube video on Linux Mint and decided that I had nothing to lose.
 
-![](linux_mint.png)
+![](linux-mint.gif)
 
 I didn't trust myself to burn my own USB stick as installation media, so I bought one from eBay pre-made instead.
 
@@ -82,7 +82,7 @@ First, I downloaded a youtube video of an Arch Linux rice with an alias for a yt
 
 Then I used a function in my .zshrc file to call ffmpeg and imagemagick to convert a section of that video into a gif.
 
-If only you knew the power of a dot file.
+## If you only knew the power of a dotfile!
 
 ![](darth-vader.gif)
 
