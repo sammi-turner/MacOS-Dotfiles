@@ -6,7 +6,7 @@
 
 Our story begins in the summer of 2018. 
 
-Money was tight for me back then and my Windows 7 desktop machine was starting randomly crash with ever greater regularity.
+Money was tight for me back then and my Windows 7 desktop machine was crashing with greater regularity.
 
 "Turn it off and turn it on again" just didn't cut the mustard any more.
 
