@@ -50,7 +50,7 @@ ls -a
 
 will include dotfiles when it lists the contents of the working directory.
 
-Of course, dotfiles aren't just a GNU/Linux thing. 
+Of course, dotfiles aren't just a GNU/Linux, MacOS or FreeBSD thing. 
 
 If you use GitBash on Windows, then your terminal's behaviour can be set in your .bashrc and .minttyrc dotfiles.
 
@@ -72,7 +72,7 @@ While most tiling window managers are configured via external files, both DWM an
 
 These days, I am more interested in earning a living through code than making naive teenagers online think that I'm a l33t h4x0r.
 
-But I still have repos of basic dotfiles for MacOS, Arcolinux, FreeBSD as well as my own fork of DWM.
+But I still have repos of basic dotfiles for MacOS, Arcolinux and FreeBSD as well as my own fork of DWM.
 
 ## Two commands, one gif
 
