@@ -16,7 +16,7 @@ I was too tight to throw the machine out, so I looked online for ways in which I
 
 I found a YouTube video on Linux Mint and decided that I had nothing to lose.
 
-![](linux-mint.gif)
+![](linux-mint.gif){:height="200px" width="200px"}
 
 I didn't trust myself to burn my own USB stick as installation media, so I bought one from eBay pre-made instead.
 
