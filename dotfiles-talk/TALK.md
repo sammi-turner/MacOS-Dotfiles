@@ -16,7 +16,7 @@ I was too tight to throw the machine out, so I looked online for ways in which I
 
 I found a YouTube video on Linux Mint and decided that I had nothing to lose.
 
-<img src="linux-mint.gif" width="80%" height="auto" />
+<img src="linux-mint.gif" width="95%" height="auto" />
 
 I didn't trust myself to burn my own USB stick as installation media, so I bought one from eBay pre-made instead.
 
@@ -28,7 +28,7 @@ Since I was only using the browser most of the time, there wasn't a great deal o
 
 If you google the question of how to do something on Windows vs the same question for Linux, you'll notice that the Windows advice is usually to click on ten different GUI interfaces, while the Linux advice is nearly always to open a terminal and type in a command.
 
-<img src="hacker.gif" width="80%" height="auto" />
+<img src="hacker.gif" width="95%" height="auto" />
 
 I always associated the terminal with either software engineering or illegal activity, so to see that it had very mundane uses like changing my default browser sort of intruiged me.
 
@@ -60,7 +60,7 @@ The acronym RICE stands for "Racing Inspired Cosmetic Enhancement".
 
 Although the term originated with car enthusiasts, it is also used by posters on the Unix Pron subreddit.
 
-<img src="unix-pron.gif" width="80%" height="auto" />
+<img src="unix-pron.gif" width="95%" height="auto" />
 
 The rules over there specify that you have to post not just screenshots of your computer set-up, but also the technical specs of your RICE and a link to the code.
 
@@ -86,4 +86,4 @@ Then I used a function in my .zshrc file to call ffmpeg and imagemagick to conve
 
 ## If you only knew the power of a dotfile!
 
-<img src="darth-vader.gif" width="80%" height="auto" />
+<img src="darth-vader.gif" width="95%" height="auto" />
