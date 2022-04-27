@@ -16,7 +16,7 @@ I was too tight to throw the machine out, so I looked online for ways in which I
 
 I found a YouTube video on Linux Mint and decided that I had nothing to lose.
 
-<img src="linux-mint.gif" width="500" height="500" />
+<img src="linux-mint.gif" width="100%" height="auto" />
 
 I didn't trust myself to burn my own USB stick as installation media, so I bought one from eBay pre-made instead.
 
