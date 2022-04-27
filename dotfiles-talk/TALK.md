@@ -6,33 +6,33 @@
 
 Our story begins in the summer of 2018. 
 
-Money was tight for me back then and my Windows 7 desktop machine was crashing with greater regularity.
+Money was tight for me back then and my Windows 7 desktop machine was crashing more often than it used to.
 
 "Turn it off and turn it on again" just didn't cut the mustard any more.
 
-I was also getting nag alerts to install Windows 10, but my poor Dell clearly wasn't set up for that level of trauma.
+I was also getting nag alerts to install Windows 10, but my poor Dell PC clearly wasn't set up for that level of trauma.
 
 I was too tight to throw the machine out, so I looked online for ways in which I might breathe new life into it instead.
 
-I found a YouTube video on Linux Mint and decided that I had nothing to lose.
+I found a YouTube video on Linux Mint and decided that I had nothing to lose by trying it.
 
 <img src="linux-mint.gif" width="95%" height="auto" />
 
-I didn't trust myself to burn my own USB stick as installation media, so I bought one from eBay pre-made instead.
+But I didn't trust myself to burn a USB stick as installation media, so I bought a pre-loaded one from eBay instead.
 
 I noticed a sharp uptick in performance with GNU/Linux and no crashes, so decided to use it at least until I could afford a more modern computer.
 
 Since I was only using the browser most of the time, there wasn't a great deal of functional difference for me between the two systems.
 
-## Ten GUI clicks vs One Command
+## Ten GUI clicks vs One Terminal Command
 
 If you google the question of how to do something on Windows vs the same question for Linux, you'll notice that the Windows advice is usually to click on ten different GUI interfaces, while the Linux advice is nearly always to open a terminal and type in a command.
 
 <img src="hacker.gif" width="95%" height="auto" />
 
-I always associated the terminal with either software engineering or illegal activity, so to see that it had very mundane uses like changing my default browser sort of intruiged me.
+I always associated the terminal with either software engineering or illegal activity, so to see that it had very mundane uses like setting my default apps with environment variables made me curious.
 
-For a while, I used to enter my sudo password, say "I'm in..." like a hacker in a bad 90s movie and then chuckle to myself like an idiot.
+For a while, every time I entered my sudo password, I'd say "I'm in..." like a hacker in a bad 90s movie, and then chuckle to myself like an idiot.
 
 ## Configuration
 
@@ -67,6 +67,8 @@ The rules over there specify that you have to post not just screenshots of your 
 For a while, I was obssessed with tiling window managers, terminal apps, and highly configurable text editors like Vim and Emacs.
 
 While most tiling window managers are configured via external files, both DWM and Xmonad have internal configuration files, which means that they are configured by editing the source code of the application itself and they both require recompilation for changes to take effect.
+
+DWM also implements optional features as official patches in the form of diffs, which are files that show the user which code to add, and which code to remove before recompiling.
 
 From my own experience, I am convinced that DWM is just an elaborate ruse to turn people into C programmers.
 
