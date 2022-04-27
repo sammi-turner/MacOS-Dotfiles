@@ -1,8 +1,8 @@
-# DOTFILES : A hobbyist programmer's origin story
+# DOTFILES : The Origin Story of a Hobbyist Programmer
 
 *A five minute "lightening talk" for Code Nation's Master Course*
 
-## A really knackered computer...
+## A really knackered computer
 
 Our story begins in the summer of 2018. 
 
@@ -32,7 +32,7 @@ If you google the question of how to do something on Windows vs the same questio
 
 I always associated the terminal with either software engineering or illegal activity, so to see that it had very mundane uses like changing my default browser sort of intruiged me.
 
-I used to enter my sudo password, say "I'm in..." like a hacker in a 90s movie and then chuckle to myself like an idiot.
+For a while, I used to enter my sudo password, say "I'm in..." like a hacker in a bad 90s movie and then chuckle to myself like an idiot.
 
 ## Configuration
 
@@ -50,15 +50,15 @@ ls -a
 
 will include dotfiles when it lists the contents of the working directory.
 
-Of course, dotfiles aren't just a GNU/Linux, MacOS or FreeBSD thing. 
+Of course, dotfiles aren't just a GNU/Linux or MacOS thing.
 
-If you use GitBash on Windows, then your terminal's behaviour can be set in your .bashrc and .minttyrc dotfiles.
+If you use GitBash on Windows, then your terminal's behaviour can be set with .bashrc and .minttyrc dotfiles.
 
 ## RICE
 
 The acronym RICE stands for "Racing Inspired Cosmetic Enhancement".
 
-Although the term originated with car enthusiasts, it is also used by posters at the Unix P*rn subreddit.
+Although the term originated with car enthusiasts, it is also used by posters on the Unix Pron subreddit.
 
 ![](unix-pron.gif)
 
@@ -68,9 +68,11 @@ For a while, I was obssessed with tiling window managers, terminal apps, and hig
 
 While most tiling window managers are configured via external files, both DWM and Xmonad have internal configuration files, which means that they are configured by editing the source code of the application itself and they both require recompilation for changes to take effect.
 
+From my own experience, I am convinced that DWM is just an elaborate ruse to turn people into C programmers.
+
 ## Shifting focus
 
-These days, I am more interested in earning a living through code than making naive teenagers online think that I'm a l33t h4x0r.
+These days, I am more interested in earning a living through code than making naive teenagers on Reddit think that I'm a l33t h4x0r.
 
 But I still have repos of basic dotfiles for MacOS, Arcolinux and FreeBSD as well as my own fork of DWM.
 
