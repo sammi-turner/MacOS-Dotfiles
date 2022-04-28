@@ -58,7 +58,7 @@ If you use GitBash on Windows, then your terminal's behaviour can be set with .b
 
 The acronym RICE stands for "Racing Inspired Cosmetic Enhancement".
 
-Although the term originated with car enthusiasts, it is also used by posters on the Unix Pron subreddit.
+Although the term originated with car enthusiasts, it is also used by posters on the Unix Porn subreddit.
 
 <img src="unix-pron.gif" width="100%" height="auto" />
 
