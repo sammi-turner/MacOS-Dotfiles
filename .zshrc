@@ -164,18 +164,19 @@ clip() {
 play() {
 	ffplay -ss "$1" -t "$2" "$3".mp4
 }
+
 # PRE GIF
 # This function uses ffmpeg.
 # It is a helper function called by get_gif.
 pre_gif() {
-	ffmpeg -i "$1".mp4 -ss "$2" -t "$3" -vf "fps=10,scale=320:-1" -an "$4".mp4
+	ffmpeg -i "$1".mp4 -ss "$2" -t "$3" -vf "fps=10,scale=640:-1" -an "$4".mp4
 }
 
 # MAKE GIF
 # This function uses ffmpeg and imagemagick.
 # It is a helper function called by get_gif.
 make_gif() {
-	ffmpeg -i "$1".mp4 -vf "fps=10,scale=320:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers optimize "$1".gif
+	ffmpeg -i "$1".mp4 -vf "fps=10,scale=640:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers optimize "$1".gif
 }
 
 # GET GIF
@@ -191,3 +192,11 @@ get_gif() {
 	make_gif "$4";
 	rm "$4".mp4;
 }
+
+# RUST FILE PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/user/flutter/bin:/Library/Apple/usr/bin
+. "$HOME/.cargo/env"
+
+# OCAML FILE PATH
+# opam configuration
+test -r /Users/user/.opam/opam-init/init.sh && . /Users/user/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
