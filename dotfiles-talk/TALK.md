@@ -80,7 +80,7 @@ But I still have repos of basic dotfiles for MacOS, Arcolinux and FreeBSD as wel
 
 ## Two commands, one gif
 
-I didn't download that ricing gif. I created it.
+I didn't download that ricing gif ready made from the internet. Instead, I used two shell commands.
 
 First, I downloaded a youtube video of an Arch Linux rice with an alias for a yt-dlp command.
 
