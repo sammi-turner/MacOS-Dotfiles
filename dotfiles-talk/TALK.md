@@ -60,7 +60,7 @@ The acronym RICE stands for "Racing Inspired Cosmetic Enhancement".
 
 Although the term originated with car enthusiasts, it is also used by posters on the Unix Porn subreddit.
 
-<img src="unix-pron.gif" width="100%" height="auto" />
+<img src="unix-porn.gif" width="100%" height="auto" />
 
 The rules over there specify that you have to post not just screenshots of your computer set-up, but also the technical specs of your RICE and a link to the code.
 
