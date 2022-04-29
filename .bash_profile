@@ -11,9 +11,8 @@ alias cls='clear'
 
 # Git
 alias gcl='git clone'
-alias gaa='git add -A'
+alias gaa='git add .'
 alias gcm='git commit -m'
-alias gpu='git push -u origin main'
 
 # Download with yt-dlp
 alias dwebm='yt-dlp'
