@@ -105,10 +105,16 @@ alias zrc='open -a TextMate .zshrc'
 # CLEAR SCREEN
 alias cls='clear'
 
-# GIT
+# GIT CLONE
 alias gcl='git clone'
-alias gaa='git add .'
-alias gcm='git commit -m'
+
+# GIT ADD-COMMIT-PUSH
+# The $1 parameter is the commit message.
+acp() {
+	git add .;
+	git commit -m $1;
+	git push;
+}
 
 # YT-DLP
 alias dwebm='yt-dlp'
