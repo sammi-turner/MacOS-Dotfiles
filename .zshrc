@@ -124,6 +124,9 @@ alias dmp3='yt-dlp -x --audio-format mp3'
 # NEOFETCH
 alias neo='neofetch'
 
+# PSQL
+alias pup='psql -U postgres'
+
 # GNU MAKE
 alias foo='make && ./bin/main'
 
@@ -200,9 +203,11 @@ get_gif() {
 }
 
 # RUST FILE PATH
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/user/flutter/bin:/Library/Apple/usr/bin
-. "$HOME/.cargo/env"
+export PATH="$PATH:$HOME/.cargo/env"
 
 # OCAML FILE PATH
 # opam configuration
 test -r /Users/user/.opam/opam-init/init.sh && . /Users/user/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+# PSQL FILE PATH
+export PATH="$PATH:/Library/PostgreSQL/14/bin/"
