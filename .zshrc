@@ -205,8 +205,7 @@ get_gif() {
 # RUST FILE PATH
 export PATH="$PATH:$HOME/.cargo/env"
 
-# OCAML FILE PATH
-# opam configuration
+# OPAM CONFIG
 test -r /Users/user/.opam/opam-init/init.sh && . /Users/user/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 # PSQL FILE PATH
