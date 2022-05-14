@@ -16,7 +16,7 @@ I was too tight to throw the machine out, so I looked online for ways in which I
 
 I found a YouTube video on Linux Mint and decided that I had nothing to lose by trying it.
 
-<img src="linux-mint.gif" width="100%" height="auto" />
+<img src="gifs/linux-mint.gif" width="100%" height="auto" />
 
 But I didn't trust myself to burn a USB stick as installation media, so I bought a pre-loaded one from eBay instead.
 
@@ -28,7 +28,7 @@ Since I was only using the browser most of the time, there wasn't a great deal o
 
 If you google the question of how to do something on Windows vs the same question for Linux, you'll notice that the Windows advice is usually to click on ten different GUI interfaces, while the Linux advice is nearly always to open a terminal and type in a command.
 
-<img src="hacker.gif" width="100%" height="auto" />
+<img src="gifs/hacker.gif" width="100%" height="auto" />
 
 I always associated the terminal with either software engineering or illegal activity, so to see that it had very mundane uses like setting my default apps with environment variables made me curious.
 
@@ -60,7 +60,7 @@ The acronym RICE stands for "Racing Inspired Cosmetic Enhancement".
 
 Although the term originated with car enthusiasts, it is also used by posters on the Unix Porn subreddit.
 
-<img src="unix-porn.gif" width="100%" height="auto" />
+<img src="gifs/unix-porn.gif" width="100%" height="auto" />
 
 The rules over there specify that you have to post not just screenshots of your computer set-up, but also the technical specs of your RICE and a link to the code.
 
@@ -76,7 +76,7 @@ From my own experience, I am convinced that DWM is just an elaborate ruse to tur
 
 These days, I am more interested in earning a living through code than making naive teenagers on Reddit think that I'm a l33t h4x0r.
 
-But I still have repos of basic dotfiles for MacOS, Arcolinux and FreeBSD as well as my own fork of DWM.
+But I still have repos of basic dotfiles for MacOS and Arcolinux as well as my own fork of DWM.
 
 ## Two commands, one gif
 
@@ -88,4 +88,4 @@ Then I used a function in my .zshrc file to call ffmpeg and imagemagick to conve
 
 ## If you only knew the power of a dotfile!
 
-<img src="darth-vader.gif" width="100%" height="auto" />
+<img src="gifs/darth-vader.gif" width="100%" height="auto" />
