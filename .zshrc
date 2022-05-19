@@ -108,6 +108,10 @@ alias cls='clear'
 # GIT CLONE
 alias gcl='git clone'
 
+# GIT CHECKOUT
+alias gco='git checkout'
+alias gcb='git checkout -b'
+
 # GIT ADD-COMMIT-PUSH
 # The $1 parameter is the commit message.
 acp() {
