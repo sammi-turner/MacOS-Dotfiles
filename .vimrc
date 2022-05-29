@@ -1,22 +1,15 @@
-" syntax highlight
 filetype plugin indent on
-syntax on
-
-" line numbering
-set number
-
-" if hidden is not set, TextEdit might fail
-set hidden
-
-" better display for messages
-set cmdheight=2
-
-" Configuration file for vim
+let skip_defaults_vim=1
 set modelines=0
-
-" vi-compatibility
+syntax on
+set number
+set hidden
+set cmdheight=2
 set nocompatible
-set backspace=2
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set backspace=indent,eol,start
 
 " Don't write backup file if vim is being called by "crontab -e"
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
@@ -24,4 +17,15 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 " Don't write backup file if vim is being called by "chpass"
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
-let skip_defaults_vim=1
+" Vim Plug
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'preservim/nerdtree'
+Plug 'maxboisvert/vim-simple-complete'
+Plug 'sheerun/vim-polyglot'
+call plug#end()
+
+" Nerd tree
+nmap <F6> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=0
