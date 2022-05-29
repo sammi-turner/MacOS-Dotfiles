@@ -20,12 +20,13 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 " Vim Plug
 call plug#begin()
 Plug 'tpope/vim-sensible'
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'maxboisvert/vim-simple-complete'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Nerd tree
-nmap <F6> :NERDTreeToggle<CR>
+cd ~/Documents/Coding
 let NERDTreeShowHidden=1
-let NERDTreeQuitOnOpen=0
+map <F6> :NERDTreeToggle<CR>
+map <Leader>nt :NERDTree %:p:h<CR>
