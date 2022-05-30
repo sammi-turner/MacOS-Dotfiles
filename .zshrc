@@ -99,6 +99,16 @@ source $ZSH/oh-my-zsh.sh
 # CLEAR SCREEN
 alias cls='clear'
 
+# LS COMMANDS
+alias dots='ls -a | sort'
+alias lst='ls | sort'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# EDIT THIS FILE
+alias zrc='vim ~/.zshrc'
+
 # GIT CLONE
 alias gcl='git clone'
 
