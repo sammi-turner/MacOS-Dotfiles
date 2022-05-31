@@ -11,6 +11,12 @@ set shiftwidth=4
 set expandtab
 set backspace=indent,eol,start
 
+" Delimiter pairs
+inoremap ( ()<ESC>i
+inoremap " ""<ESC>i
+inoremap ' ''<ESC>i
+inoremap { {<Cr>}<Esc>O
+
 " Don't write backup file if vim is being called by "crontab -e"
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 
