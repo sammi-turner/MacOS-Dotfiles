@@ -106,8 +106,18 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# EDIT THIS FILE
-alias zrc='vim ~/.zshrc'
+# OPEN CODING DIRECTORY
+alias ocd='cd Documents/Coding'
+
+# OPEN TEXT MATE
+alias otm='open -a TextMate'
+
+# TEXT MATE AND CD
+# The $1 parameter is the directory
+tmc() {
+	open -a TextMate $1;
+	cd $1;
+}
 
 # GIT CLONE
 alias gcl='git clone'
