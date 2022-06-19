@@ -106,12 +106,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# OPEN CODING DIRECTORY
-alias ocd='cd Documents/Coding'
-
-# OPEN TEXT MATE
-alias otm='open -a TextMate'
-
 # GIT CLONE
 alias gcl='git clone'
 
@@ -211,9 +205,6 @@ get_gif() {
 
 # RUST FILE PATH
 export PATH="$PATH:$HOME/.cargo/env"
-
-# OPAM CONFIG
-test -r /Users/user/.opam/opam-init/init.sh && . /Users/user/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 # PSQL FILE PATH
 export PATH="$PATH:/Library/PostgreSQL/14/bin/"
