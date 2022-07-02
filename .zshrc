@@ -132,25 +132,6 @@ alias tauri-mac='yarn tauri build --target universal-apple-darwin'
 # NEOFETCH
 alias neo='neofetch'
 
-# PSQL
-alias pup='psql -U postgres'
-
-# GNU MAKE
-alias foo='make && ./bin/main'
-
-# PYTHON
-alias run='python3 app.py'
-alias env='virtualenv .'
-alias req='pip install -r requirements.txt'
-alias ugp='python3 -m pip install --upgrade pip'
-alias act='source bin/activate'
-alias dea='deactivate'
-
-# CRYSTAL
-alias cr='crystal run app.cr'
-alias cb='crystal build --no-debug app.cr'
-alias cbr='crystal build --no-debug --release app.cr'
-
 # STILLS
 # This function uses ffmpeg.
 # It generates a series of jpg images from an mp4 file.
@@ -212,6 +193,3 @@ get_gif() {
 
 # RUST FILE PATH
 export PATH="$PATH:$HOME/.cargo/env"
-
-# PSQL FILE PATH
-export PATH="$PATH:/Library/PostgreSQL/14/bin/"
