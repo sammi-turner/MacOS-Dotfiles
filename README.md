@@ -1,6 +1,6 @@
 # MacOS-Dotfiles
 
-Very simple zsh, bash, vim, iterm2, and mac terminal set ups.
+Very simple zsh, vim, iterm2, and mac terminal set ups.
 
 ## Installing Oh My ZSH! for use on iterm2
 
