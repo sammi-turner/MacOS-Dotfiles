@@ -32,7 +32,7 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Nerd tree
-cd ~/Documents/Coding
+cd ~/Documents
 let NERDTreeShowHidden=1
 map <F6> :NERDTreeToggle<CR>
 map <Leader>nt :NERDTree %:p:h<CR>
