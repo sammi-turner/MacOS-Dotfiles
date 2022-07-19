@@ -1,6 +1,6 @@
 # MacOS-Dotfiles
 
-Very simple zsh, vim, iterm2, and mac terminal set ups.
+Simple zsh, vim, ranger, iterm2, and mac terminal set ups. 
 
 ## Installing Oh My ZSH! for use on iterm2
 
@@ -39,3 +39,11 @@ then enter your password.
 ## Terminal color profiles
 
 This repo includes a folder of color profiles for both iterm2 and mac terminal.
+
+## Ranger
+
+On a mac, the ranger dotfiles live in
+
+```
+~/.config/ranger
+```
