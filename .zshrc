@@ -81,13 +81,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -95,6 +88,9 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+
+# DEFAULT EDITOR
+export EDITOR='vim'
 
 # CLEAR SCREEN
 alias cls='clear'
@@ -105,6 +101,10 @@ alias lst='ls | sort'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# RANGER
+export RANGER_LOAD_DEFAULT_RC=false
+alias rra='ranger ~/Documents/Random-Rust-Apps'
 
 # GIT CLONE
 alias gcl='git clone'
