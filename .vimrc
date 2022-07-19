@@ -1,7 +1,9 @@
+syntax on
 filetype plugin indent on
 let skip_defaults_vim=1
+
+set guifont=Monaco:h20
 set modelines=0
-syntax on
 set number
 set hidden
 set cmdheight=2
@@ -29,6 +31,7 @@ Plug 'tpope/vim-sensible'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'maxboisvert/vim-simple-complete'
 Plug 'sheerun/vim-polyglot'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " Nerd tree
