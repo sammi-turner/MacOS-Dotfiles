@@ -32,10 +32,13 @@ Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'maxboisvert/vim-simple-complete'
 Plug 'sheerun/vim-polyglot'
 Plug 'rust-lang/rust.vim'
+Plug 'dracula/vim', { 'name': 'dracula' }
 call plug#end()
 
+colorscheme dracula
+
 " Nerd tree
-cd ~/Documents
+cd ~/Documents/Random-Rust-Apps
 let NERDTreeShowHidden=1
 map <F6> :NERDTreeToggle<CR>
 map <Leader>nt :NERDTree %:p:h<CR>
