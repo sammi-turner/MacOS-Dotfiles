@@ -28,7 +28,6 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 " Vim Plug
 call plug#begin()
 Plug 'tpope/vim-sensible'
-Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'maxboisvert/vim-simple-complete'
 Plug 'sheerun/vim-polyglot'
 Plug 'rust-lang/rust.vim'
@@ -36,9 +35,3 @@ Plug 'dracula/vim', { 'name': 'dracula' }
 call plug#end()
 
 colorscheme dracula
-
-" Nerd tree
-cd ~/Documents/Random-Rust-Apps
-let NERDTreeShowHidden=1
-map <F6> :NERDTreeToggle<CR>
-map <Leader>nt :NERDTree %:p:h<CR>
