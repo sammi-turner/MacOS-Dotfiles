@@ -102,8 +102,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# RANGER
-export RANGER_LOAD_DEFAULT_RC=false
+# CODING IN RUST
 alias rra='ranger ~/Documents/Random-Rust-Apps'
 
 # GIT CLONE
@@ -193,3 +192,5 @@ get_gif() {
 
 # RUST FILE PATH
 export PATH="$PATH:$HOME/.cargo/env"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
