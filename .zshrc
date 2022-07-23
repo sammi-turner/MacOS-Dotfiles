@@ -102,8 +102,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# CODING IN RUST
-alias rra='ranger ~/Documents/Random-Rust-Apps'
+# RANGER SHORTCUTS
+alias rust='ranger ~/Documents/Rust'
 
 # GIT CLONE
 alias gcl='git clone'
