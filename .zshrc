@@ -102,8 +102,11 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# RANGER SHORTCUTS
-alias rust='ranger ~/Documents/Rust'
+# EDIT THIS FILE
+alias zrc='vim .zshrc'
+
+# NEW RUST PROJECT
+alias rust='cd Documents/Rust && cargo new'
 
 # GIT CLONE
 alias gcl='git clone'
