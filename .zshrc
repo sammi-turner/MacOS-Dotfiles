@@ -103,7 +103,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # RANGER SHORTCUTS
-alias home='ranger'
+alias rr='ranger'
 alias docs='ranger ~/Documents'
 alias pics='ranger ~/Pictures'
 
