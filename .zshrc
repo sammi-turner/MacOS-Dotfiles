@@ -102,6 +102,11 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# RANGER SHORTCUTS
+alias home='ranger'
+alias docs='ranger ~/Documents'
+alias pics='ranger ~/Pictures'
+
 # EDIT THIS FILE
 alias zrc='vim .zshrc'
 
