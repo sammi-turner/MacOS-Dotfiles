@@ -18,6 +18,7 @@ inoremap ( ()<ESC>i
 inoremap " ""<ESC>i
 inoremap ' ''<ESC>i
 inoremap { {<Cr>}<Esc>O
+nnoremap <C-t> :NERDTreeToggle<CR>
 
 " Don't write backup file if vim is being called by "crontab -e"
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
@@ -27,6 +28,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 " Vim Plug
 call plug#begin()
+Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-sensible'
 Plug 'maxboisvert/vim-simple-complete'
 Plug 'sheerun/vim-polyglot'
