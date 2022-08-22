@@ -1,5 +1,8 @@
-# If you come from bash you might have to change your $PATH.
+# FILE PATHS
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$PATH:$HOME/.cargo/env"
+export PATH=$PATH:/opt/local/bin
+export PATH="$PATH:$HOME/.local/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -90,7 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # DEFAULT EDITOR
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # CLEAR SCREEN
 alias cls='clear'
@@ -195,8 +198,3 @@ get_gif() {
 	make_gif "$4";
 	rm "$4".mp4;
 }
-
-# RUST FILE PATH
-export PATH="$PATH:$HOME/.cargo/env"
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
