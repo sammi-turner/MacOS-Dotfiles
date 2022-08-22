@@ -2,7 +2,6 @@ syntax on
 filetype plugin indent on
 let skip_defaults_vim=1
 
-set guifont=Monaco:h20
 set modelines=0
 set number
 set hidden
