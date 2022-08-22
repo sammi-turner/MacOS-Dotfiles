@@ -93,7 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # DEFAULT EDITOR
-export EDITOR='nvim'
+export EDITOR='vim'
 
 # CLEAR SCREEN
 alias cls='clear'
