@@ -18,6 +18,8 @@ inoremap ( ()<ESC>i
 inoremap " ""<ESC>i
 inoremap ' ''<ESC>i
 inoremap { {<Cr>}<Esc>O
+
+" Nerd Tree Toggle
 nnoremap <C-t> :NERDTreeToggle<CR>
 
 " Don't write backup file if vim is being called by "crontab -e"
@@ -33,7 +35,4 @@ Plug 'tpope/vim-sensible'
 Plug 'maxboisvert/vim-simple-complete'
 Plug 'sheerun/vim-polyglot'
 Plug 'rust-lang/rust.vim'
-Plug 'dracula/vim', { 'name': 'dracula' }
 call plug#end()
-
-colorscheme dracula
