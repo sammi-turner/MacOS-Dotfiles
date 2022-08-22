@@ -95,6 +95,9 @@ source $ZSH/oh-my-zsh.sh
 # DEFAULT EDITOR
 export EDITOR='vim'
 
+# EXIT
+alias e='exit'
+
 # CLEAR SCREEN
 alias cls='clear'
 
