@@ -19,8 +19,9 @@ inoremap " ""<ESC>i
 inoremap ' ''<ESC>i
 inoremap { {<Cr>}<Esc>O
 
-" Nerd Tree Toggle
-nnoremap <C-t> :NERDTreeToggle<CR>
+" Commands
+nnoremap <C-t> :term<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 " Don't write backup file if vim is being called by "crontab -e"
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
