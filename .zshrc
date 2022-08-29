@@ -112,7 +112,9 @@ alias l='ls -CF'
 alias rr='ranger'
 alias pics='ranger ~/Pictures'
 alias docs='ranger ~/Documents'
-alias rust='ranger ~/Documents/Rust'
+
+# OPEN RUST CODE DIRECTORY
+alias rust='cd ~/Documents/Rust'
 
 # EDIT THIS FILE
 alias zrc='vim ~/.zshrc'
