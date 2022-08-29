@@ -34,7 +34,7 @@ Plug 'tpope/vim-sensible'
 Plug 'maxboisvert/vim-simple-complete'
 Plug 'sheerun/vim-polyglot'
 Plug 'rust-lang/rust.vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'morhetz/gruvbox'
 call plug#end()
 
-colorscheme dracula
+colorscheme gruvbox
