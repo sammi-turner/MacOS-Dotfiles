@@ -52,4 +52,6 @@ On a mac, the ranger dotfiles live in
 
 On a mac, the micro dotfiles live in
 
+```
 ~/.config/micro
+```
