@@ -1,6 +1,6 @@
 # MacOS-Dotfiles
 
-Simple zsh, vim, tmux, ranger, iterm2, and mac terminal set ups.
+Simple zsh, micro, vim, tmux, ranger, iterm2, and mac terminal set ups.
 
 ## Installing Oh My ZSH! for use on iterm2
 
@@ -47,3 +47,9 @@ On a mac, the ranger dotfiles live in
 ```
 ~/.config/ranger
 ```
+
+## Micro
+
+On a mac, the micro dotfiles live in
+
+~/.config/micro
