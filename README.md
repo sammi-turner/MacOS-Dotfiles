@@ -40,25 +40,21 @@ then enter your password.
 
 This repo includes a folder of color profiles for both iterm2 and mac terminal.
 
-## Ranger
+## Config locations
 
-On a mac, the ranger dotfiles live in
+### Ranger
 
 ```
 ~/.config/ranger
 ```
 
-## Micro
-
-On a mac, the micro dotfiles live in
+### Micro
 
 ```
 ~/.config/micro
 ```
 
-## Neovim
-
-On a mac, the neovim config is located in
+### Neovim
 
 ```
 ~/.config/nvim
