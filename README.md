@@ -55,3 +55,11 @@ On a mac, the micro dotfiles live in
 ```
 ~/.config/micro
 ```
+
+## Neovim
+
+On a mac, the neovim config is located in
+
+```
+~/.config/nvim
+```
