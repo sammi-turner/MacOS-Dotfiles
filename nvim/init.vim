@@ -2,11 +2,11 @@ syntax on
 filetype plugin indent on
 let skip_defaults_vim=1
 
+set wrap!
 set modelines=0
 set number
 set hidden
 set cmdheight=2
-set nocompatible
 set tabstop=4
 set shiftwidth=4
 set expandtab
