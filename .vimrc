@@ -1,4 +1,4 @@
-syntax on
+syntax enable
 filetype plugin indent on
 let skip_defaults_vim=1
 
@@ -20,6 +20,7 @@ inoremap { {<Cr>}<Esc>O
 
 " Commands
 nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-r> :RustFmt<CR>
 
 " Don't write backup file if vim is being called by "crontab -e"
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
