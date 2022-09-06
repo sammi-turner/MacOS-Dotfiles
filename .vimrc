@@ -4,13 +4,16 @@ let skip_defaults_vim=1
 
 set wrap!
 set modelines=0
-set number
 set hidden
 set cmdheight=2
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set backspace=indent,eol,start
+
+" Hybrid line numbers
+set number relativenumber
+set nu rnu
 
 " Delimiter pairs
 inoremap ( ()<ESC>i
