@@ -1,17 +1,30 @@
-syntax enable
-filetype plugin indent on
-let skip_defaults_vim=1
-
-set wrap!
-set modelines=0
-set hidden
+set linebreak	    
+set showbreak=+++	
+set textwidth=100
+set showmatch
+set visualbell
+    
+set hlsearch	    
+set smartcase
+set ignorecase	    
+set incsearch
+set autoindent
+	    
+set cindent      
+set expandtab	    
+set shiftwidth=4	
+set smartindent
+set smarttab
+   
+set softtabstop=4
+set ruler
 set cmdheight=2
 set tabstop=4
 set shiftwidth=4
-set expandtab
-set backspace=indent,eol,start
 
-" Hybrid line numbers
+set expandtab
+set undolevels=1000
+set backspace=indent,eol,start
 set number relativenumber
 set nu rnu
 
@@ -24,12 +37,6 @@ inoremap { {<Cr>}<Esc>O
 " Commands
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-r> :RustFmt<CR>
-
-" Don't write backup file if vim is being called by "crontab -e"
-au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
-
-" Don't write backup file if vim is being called by "chpass"
-au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 " Vim Plug
 call plug#begin()
