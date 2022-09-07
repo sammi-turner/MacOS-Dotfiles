@@ -93,7 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # DEFAULT EDITOR
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # EXIT
 alias e='exit'
@@ -113,11 +113,13 @@ alias rr='ranger'
 alias pics='ranger ~/Pictures'
 alias docs='ranger ~/Documents'
 
-# OPEN RUST CODE DIRECTORY
+# RUST SHORTCUTS
 alias rust='cd ~/Documents/Rust'
+alias cbr='cargo build --release'
+alias cr='cargo run'
 
 # EDIT THIS FILE
-alias zrc='vim ~/.zshrc'
+alias zrc='nvim ~/.zshrc'
 
 # GIT CLONE
 alias gcl='git clone'
