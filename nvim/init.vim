@@ -24,6 +24,7 @@ set expandtab
 
 set undolevels=1000
 set backspace=indent,eol,start
+set termguicolors
 
 set number relativenumber
 set nu rnu
