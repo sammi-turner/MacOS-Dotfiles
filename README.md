@@ -1,6 +1,6 @@
 # MacOS-Dotfiles
 
-Simple zsh, micro, vim, tmux, ranger, iterm2, and mac terminal set ups.
+Simple configs for various apps.
 
 ## Installing Oh My ZSH! for use on iterm2
 
