@@ -51,4 +51,4 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
 
 " colorscheme gruvbox
-colorscheme tokyonight-night
+colorscheme tokyonight-storm
