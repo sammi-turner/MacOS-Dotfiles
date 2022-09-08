@@ -48,7 +48,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'rust-lang/rust.vim'
 Plug 'morhetz/gruvbox'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'fratajczak/one-monokai-vim'
 call plug#end()
 
 " colorscheme gruvbox
-colorscheme tokyonight-storm
+" colorscheme tokyonight-storm
+colorscheme one-monokai
