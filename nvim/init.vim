@@ -47,6 +47,8 @@ Plug 'maxboisvert/vim-simple-complete'
 Plug 'sheerun/vim-polyglot'
 Plug 'rust-lang/rust.vim'
 Plug 'morhetz/gruvbox'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
 
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme tokyonight-night
