@@ -46,11 +46,9 @@ Plug 'tpope/vim-sensible'
 Plug 'maxboisvert/vim-simple-complete'
 Plug 'sheerun/vim-polyglot'
 Plug 'rust-lang/rust.vim'
-Plug 'morhetz/gruvbox'
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-Plug 'fratajczak/one-monokai-vim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 call plug#end()
 
-" colorscheme gruvbox
-" colorscheme tokyonight-storm
-colorscheme one-monokai
+" Color scheme
+let g:catppuccin_flavour = "macchiato" " latte, frappe, macchiato, mocha
+colorscheme catppuccin
