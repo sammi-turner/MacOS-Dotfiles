@@ -59,3 +59,9 @@ This repo includes a folder of color profiles for both iterm2 and mac terminal.
 ```
 ~/.config/nvim
 ```
+
+### Helix
+
+```
+~/.config/helix
+```
