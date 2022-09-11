@@ -119,7 +119,10 @@ alias cbr='cargo build --release'
 alias cr='cargo run'
 
 # EDIT THIS FILE
-alias zrc='nvim ~/.config/nvim/init.vim'
+alias zrc='nvim ~/.zshrc'
+
+# EDIT NEOVIM CONFIG
+alias nvc='nvim ~/.config/nvim/init.vim'
 
 # GIT CLONE
 alias gcl='git clone'
