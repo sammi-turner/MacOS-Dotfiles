@@ -1,27 +1,24 @@
 set linebreak	    
 set showmatch
-set visualbell
-    
-set hlsearch	    
+set visualbell    
+set hlsearch
+
 set smartcase
 set ignorecase	    
-
 set incsearch
 set autoindent
-set expandtab	    
 
+set expandtab	    
 set shiftwidth=4	
-set smartindent
 set smarttab
-   
 set softtabstop=4
+
 set ruler
 set cmdheight=2
-
 set tabstop=4
 set shiftwidth=4
-set expandtab
 
+set expandtab
 set undolevels=1000
 set backspace=indent,eol,start
 set termguicolors
@@ -50,5 +47,5 @@ Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 call plug#end()
 
 " Color scheme
-let g:catppuccin_flavour = "macchiato" " latte, frappe, macchiato, mocha
+let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
 colorscheme catppuccin
