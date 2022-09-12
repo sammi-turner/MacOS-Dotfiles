@@ -93,7 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # DEFAULT EDITOR
-export EDITOR='nvim'
+export EDITOR='hx'
 
 # EXIT
 alias e='exit'
@@ -119,10 +119,7 @@ alias cbr='cargo build --release'
 alias cr='cargo run'
 
 # EDIT THIS FILE
-alias zrc='nvim ~/.zshrc'
-
-# EDIT NEOVIM CONFIG
-alias nvc='nvim ~/.config/nvim/init.vim'
+alias zrc='hx ~/.zshrc'
 
 # GIT CLONE
 alias gcl='git clone'
