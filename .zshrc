@@ -112,9 +112,16 @@ alias l='ls -CF'
 alias rr='ranger'
 alias pics='ranger ~/Pictures'
 alias docs='ranger ~/Documents'
+alias jou='ranger ~/Documents/Journal'
+
+# RUST PROJECT OPENER
+# $1 parameter is the project name
+rpo() {
+	cd ~/Documents/Rust/$1
+}
 
 # RUST SHORTCUTS
-alias rust='cd ~/Documents/Rust'
+alias cds='cd src && hx'
 alias cbr='cargo build --release'
 alias cr='cargo run'
 
@@ -123,6 +130,9 @@ alias zrc='hx ~/.zshrc'
 
 # GIT CLONE
 alias gcl='git clone'
+
+# OPEN SRC DIRECTORY IN HEX
+alias shx='cd src && hx'
 
 # GIT ADD-COMMIT-PUSH
 # The $1 parameter is the commit message.
