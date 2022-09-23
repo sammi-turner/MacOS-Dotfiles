@@ -125,23 +125,14 @@ rpo() {
 	cd ~/Documents/Rust/$1
 }
 
-# OPEN SRC DIRECTORY IN HEX
-alias shx='cd src && hx'
-
 # EDIT THIS FILE
 alias zrc='hx ~/.zshrc'
 
 # GIT CLONE
 alias gcl='git clone'
 
-# GIT CLONE, THEN REMOVE GIT FOLDER
-# The $1 parameter is the user name
-# The $2 parameter is the repo name
-gcr() {
-	git clone https://github.com/$1/$2;
-	cd $2;
-	rm -rf .git;	
-}
+# REMOVE GIT FOLDER
+alias rmg='rm -rf .git'
 
 # GIT ADD-COMMIT-PUSH
 # The $1 parameter is the commit message.
