@@ -114,8 +114,7 @@ alias pics='ranger ~/Pictures'
 alias docs='ranger ~/Documents'
 alias jou='ranger ~/Documents/Journal'
 
-# RUST SHORTCUTS
-alias cds='cd src && hx'
+# RUST ALIASES
 alias cbr='cargo build --release'
 alias cr='cargo run'
 
@@ -123,6 +122,13 @@ alias cr='cargo run'
 # $1 parameter is the project name
 rpo() {
 	cd ~/Documents/Rust/$1
+}
+
+# RUST NEW PROJECT
+# $1 parameter is the project name
+rnp() {
+	cd ~/Documents/Rust;
+	cargo new $1;
 }
 
 # EDIT THIS FILE
