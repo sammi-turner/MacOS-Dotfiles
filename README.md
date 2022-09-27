@@ -38,30 +38,12 @@ then enter your password.
 
 ## Terminal color profiles
 
-This repo includes a folder of color profiles for both iterm2 and mac terminal.
+This repo includes a directory of color profiles for both iterm2 and mac terminal.
 
-## Config locations
+## Text editors
 
-### Ranger
+The '.config' directory has sub directories for helix, nvim and micro.
 
-```
-~/.config/ranger
-```
+## Terminal file manager
 
-### Micro
-
-```
-~/.config/micro
-```
-
-### Neovim
-
-```
-~/.config/nvim
-```
-
-### Helix
-
-```
-~/.config/helix
-```
+The '.config' directory has a sub directory for ranger.
