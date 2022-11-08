@@ -2,8 +2,6 @@
 
 Simple configs for various apps.
 
-```
-
 ## To change your default shell
 
 to Zsh, enter
