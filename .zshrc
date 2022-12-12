@@ -1,5 +1,8 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# FILE PATHS
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$PATH:$HOME/.cargo/env"
+export PATH=$PATH:/opt/local/bin
+export PATH="$PATH:$HOME/.local/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -8,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -81,13 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -95,16 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# FILE PATHS
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="$PATH:$HOME/.cargo/env"
-export PATH=$PATH:/opt/local/bin
-export PATH="$PATH:$HOME/.local/bin"
 
 # DEFAULT EDITOR
 export EDITOR='hx'
@@ -118,9 +104,7 @@ alias cls='clear'
 # LS COMMANDS
 alias dots='ls -a | sort'
 alias lst='ls | sort'
-alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
 
 # RANGER SHORTCUTS
 alias rr='ranger'
@@ -128,22 +112,9 @@ alias pics='ranger ~/Pictures'
 alias docs='ranger ~/Documents'
 alias jou='ranger ~/Documents/Journal'
 
-# RUST ALIASES
-alias cbr='cargo build --release'
-alias cr='cargo run'
-
-# RUST PROJECT OPENER
-# $1 parameter is the project name
-rpo() {
-	cd ~/Documents/Rust/$1
-}
-
-# RUST NEW PROJECT
-# $1 parameter is the project name
-rnp() {
-	cd ~/Documents/Rust;
-	cargo new $1;
-}
+# CODING
+alias cdr='cd Documents/Rustlang'
+alias cdg='cd Documents/Golang'
 
 # EDIT THIS FILE
 alias zrc='hx ~/.zshrc'
