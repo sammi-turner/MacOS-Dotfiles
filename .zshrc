@@ -116,6 +116,13 @@ alias jou='ranger ~/Documents/Journal'
 alias cdr='cd Documents/Rustlang'
 alias cdg='cd Documents/Golang'
 
+# MKDIR and CD COMBINED
+# The $1 parameter is the directory name
+mcd() {
+	mkdir $1;
+	cd $1;
+}
+
 # EDIT THIS FILE
 alias zrc='hx ~/.zshrc'
 
