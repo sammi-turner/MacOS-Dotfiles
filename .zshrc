@@ -95,6 +95,12 @@ source $ZSH/oh-my-zsh.sh
 # DEFAULT EDITOR
 export EDITOR='hx'
 
+# LANGUAGE SERVER PROTOCOL
+lsp() {
+	hx --grammar fetch;
+	hx --grammar build;
+}
+
 # EXIT
 alias e='exit'
 
