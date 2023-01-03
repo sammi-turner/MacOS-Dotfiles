@@ -112,6 +112,19 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
+# NEW RUST PROJECT
+nrp() {
+	cd ~/Documents/Rustlang;
+	cargo new $1;
+}
+
+# NEW GO PROJECT
+ngp() {
+	cd ~/Documents/Golang;
+	take $1;
+	touch $2;
+}
+
 # HELIX SHORTCUTS
 alias hj='hx ~/Documents/Journal'
 alias hr='hx ~/Documents/Rustlang'
