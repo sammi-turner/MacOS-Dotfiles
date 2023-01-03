@@ -123,6 +123,7 @@ ngp() {
 	cd ~/Documents/Golang;
 	take $1;
 	touch $2;
+	hx $2;
 }
 
 # HELIX SHORTCUTS
