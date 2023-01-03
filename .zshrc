@@ -112,18 +112,11 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
-# RANGER SHORTCUTS
-alias rr='ranger'
-alias pics='ranger ~/Pictures'
-alias docs='ranger ~/Documents'
-alias jou='ranger ~/Documents/Journal'
-
-# CODING
-alias cdr='cd Documents/Rustlang'
-alias cdg='cd Documents/Golang'
-
-# EDIT THIS FILE
-alias zrc='hx ~/.zshrc'
+# HELIX SHORTCUTS
+alias hj='hx ~/Documents/Journal'
+alias hr='hx ~/Documents/Rustlang'
+alias hg='hx ~/Documents/Golang'
+alias hz='hx ~/.zshrc'
 
 # GIT CLONE
 alias gcl='git clone'
