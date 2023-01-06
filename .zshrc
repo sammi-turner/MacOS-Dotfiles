@@ -112,15 +112,18 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
+# CHANGE DIRECTORY
+alias cdr='cd ~/Documents/Rustlang'
+alias cdg='cd ~/Documents/Golang'
+
 # NEW RUST PROJECT
 nrp() {
-	cd ~/Documents/Rustlang;
 	cargo new $1;
+	cd $1;
 }
 
 # NEW GO PROJECT
 ngp() {
-	cd ~/Documents/Golang;
 	take $1;
 	hx $2;
 }
