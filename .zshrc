@@ -122,11 +122,9 @@ nrp() {
 	cd $1;
 }
 
-# NEW GO PROJECT
-ngp() {
-	take $1;
-	hx $2;
-}
+# GO COMMANDS
+alias gmi='go mod init'
+alias gin='go install'
 
 # HELIX SHORTCUTS
 alias hj='hx ~/Documents/Journal'
