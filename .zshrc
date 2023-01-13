@@ -1,6 +1,7 @@
 # FILE PATHS
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$PATH:$HOME/.cargo/env"
+export PATH="$PATH:$HOME/go/bin"
 export PATH=$PATH:/opt/local/bin
 export PATH="$PATH:$HOME/.local/bin"
 
