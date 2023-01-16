@@ -105,9 +105,6 @@ lsp() {
 # EXIT
 alias e='exit'
 
-# CLEAR SCREEN
-alias cls='clear'
-
 # LS COMMANDS
 alias dots='ls -a | sort'
 alias lst='ls | sort'
