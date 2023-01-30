@@ -121,6 +121,9 @@ nrp() {
 	rm -rf .git;
 }
 
+# RELEASE BUILD
+alias crr='cargo run --release'
+
 # GO COMMANDS
 alias gmi='go mod init'
 alias gin='go install'
