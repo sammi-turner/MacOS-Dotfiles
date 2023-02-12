@@ -111,7 +111,7 @@ alias lst='ls | sort'
 alias la='ls -A'
 
 # CHANGE DIRECTORY
-alias cdr='cd ~/Documents/Rustlang'
+alias cdr='cd ~/Rustlang'
 alias cdg='cd ~/go/src'
 
 # NEW RUST PROJECT
@@ -132,7 +132,7 @@ alias gin='go install'
 
 # HELIX SHORTCUTS
 alias hj='hx ~/Documents/Journal'
-alias hr='hx ~/Documents/Rustlang'
+alias hr='hx ~/Rustlang'
 alias hg='hx ~/go/src'
 alias hz='hx ~/.zshrc'
 
