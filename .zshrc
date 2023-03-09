@@ -114,6 +114,10 @@ alias la='ls -A'
 alias cdr='cd ~/Rustlang'
 alias cdg='cd ~/go/src'
 
+# ASTRO COMMANDS
+alias pca='pnpm create astro@latest'
+alias prd='pnpm run dev'
+
 # NEW RUST PROJECT
 nrp() {
 	cargo init $1;
