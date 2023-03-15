@@ -2,6 +2,16 @@
 
 Simple configs for various apps.
 
+## Install Homebrew
+
+Enter this command
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Note that the brew command will not work unless it is on PATH variable, which is set with the .zshrc config in this repo.
+
 ## Oh My Zsh
 
 Use this command to install
@@ -11,22 +21,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ```
 
 then replace the default .zshrc file with the one in this repo.
-
-## To change your default shell
-
-to Zsh, enter
-
-```
-$ chsh -s /bin/zsh
-```
-
-or to Bash, enter
-
-```
-$ chsh -s /bin/bash
-```
-
-then enter your password.
 
 ## Terminal color profiles
 
