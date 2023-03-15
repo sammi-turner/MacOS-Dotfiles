@@ -24,3 +24,21 @@ Then add brew to the PATH variable by making sure these lines are at the top of 
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
 ```
+
+## Checklist for a new machine
+
+Install the rust toolchain with
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Install the following packages with homebrew
+
+```
+git
+ffmpeg
+yt-dlp
+node
+pnpm
+```
