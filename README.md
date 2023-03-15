@@ -2,22 +2,22 @@
 
 Simple configs for various apps.
 
-## Oh My Zsh
-
-Use this command to install
-
-```
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-then replace the default .zshrc file with the one in this repo.
-
 ## Install Homebrew
 
 After installing Xcode from the Apple app store, enter this command
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+then replace the default .zshrc file with the one in this repo.
+
+## Oh My Zsh
+
+Use this command to install
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Terminal color profiles
