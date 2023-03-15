@@ -10,7 +10,12 @@ After installing Xcode from the Apple app store, enter this command
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-then replace the default .zshrc file with the one in this repo.
+Then add brew to the PATH variable by making sure these lines are at the top of your .zshrc config
+
+```
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/sbin:$PATH
+```
 
 ## To install "Oh My Zsh"
 
