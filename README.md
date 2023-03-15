@@ -24,7 +24,3 @@ Enter this command
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-
-## Terminal color profiles
-
-This repo includes a directory of color profiles for both iterm2 and mac terminal.
