@@ -127,6 +127,10 @@ nrp() {
 	rm -rf .git;
 }
 
+# TAURI COMMANDS
+alias cta='create tauri-app'
+alias ctd='cargo tauri dev'
+
 # CARGO RUN
 alias cr='cargo run'
 alias crr='cargo run --release'
