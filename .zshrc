@@ -140,6 +140,11 @@ alias crl='cargo run 2> cargo.log'
 alias gmi='go mod init'
 alias gin='go install'
 
+# HASKELL
+run() {
+	ghc $1.hs && ./$1;
+}
+
 # HELIX SHORTCUTS
 alias hj='hx ~/Documents/Journal'
 alias hr='hx ~/Rustlang'
