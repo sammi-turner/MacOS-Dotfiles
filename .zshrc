@@ -113,10 +113,11 @@ alias lst='ls | sort'
 alias la='ls -A'
 
 # CHANGE DIRECTORY
+alias cdh='cd ~/Haskell'
 alias cdr='cd ~/Rustlang'
 alias cdg='cd ~/go/src'
 
-# ASTRO COMMANDS
+# ASTRO
 alias pca='pnpm create astro@latest'
 alias prd='pnpm run dev'
 
@@ -127,7 +128,7 @@ nrp() {
 	rm -rf .git;
 }
 
-# TAURI COMMANDS
+# TAURI
 alias cta='create tauri-app'
 alias ctd='cargo tauri dev'
 
@@ -136,17 +137,18 @@ alias cr='cargo run'
 alias crr='cargo run --release'
 alias crl='cargo run 2> cargo.log'
 
-# GO COMMANDS
+# GOLANG
 alias gmi='go mod init'
 alias gin='go install'
 
 # HASKELL
-run() {
+hcr() {
 	ghc $1.hs && ./$1;
 }
 
 # HELIX SHORTCUTS
-alias hj='hx ~/Documents/Journal'
+alias hh='hx ~/Haskell'
+alias hj='hx ~/Journal'
 alias hr='hx ~/Rustlang'
 alias hg='hx ~/go/src'
 alias hz='hx ~/.zshrc'
@@ -238,3 +240,5 @@ get_gif() {
 	make_gif "$4";
 	rm "$4".mp4;
 }
+
+[ -f "/Users/sammiturner/.ghcup/env" ] && source "/Users/sammiturner/.ghcup/env" # ghcup-env
