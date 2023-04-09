@@ -27,12 +27,6 @@ export PATH=/opt/homebrew/sbin:$PATH
 
 ## Checklist for a new machine
 
-Install the rust toolchain with
-
-```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
 Install the following packages with homebrew
 
 ```
