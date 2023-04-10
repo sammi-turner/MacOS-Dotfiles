@@ -114,23 +114,11 @@ alias la='ls -A'
 
 # CHANGE DIRECTORY
 alias cdh='cd ~/Haskell'
-alias cdr='cd ~/Rustlang'
 alias cdg='cd ~/go/src'
 
 # ASTRO
 alias pca='pnpm create astro@latest'
 alias prd='pnpm run dev'
-
-# NEW RUST PROJECT
-nrp() {
-	cargo init $1;
-	cd $1;
-	rm -rf .git;
-}
-
-# TAURI
-alias cta='create tauri-app'
-alias ctd='cargo tauri dev'
 
 # CARGO RUN
 alias cr='cargo run'
@@ -171,13 +159,6 @@ acp() {
 alias dwebm='yt-dlp'
 alias dmp4='yt-dlp -f mp4'
 alias dmp3='yt-dlp -x --audio-format mp3'
-
-# TAURI
-alias cta='npx create-tauri-app'
-alias ytd='yarn tauri dev'
-alias tauri-intel='yarn tauri build --target x86_64-apple-darwin'
-alias tauri-m1='yarn tauri build --target aarch64-apple-darwin'
-alias tauri-mac='yarn tauri build --target universal-apple-darwin'
 
 # NEOFETCH
 alias neo='neofetch'
