@@ -115,7 +115,6 @@ alias la='ls -A'
 # CHANGE DIRECTORY
 alias cdg='cd ~/go/src'
 alias cdh='cd ~/Haskell'
-alias cdz='cd ~/Zig'
 
 # GO COMMANDS
 alias gmi='go mod init'
@@ -131,21 +130,10 @@ htt() {
 	take $1 && touch $1.hs
 }
 
-# ZIG RUN
-zr() {
-	zig run $1.zig
-}
-
-# ZIG TAKE AND TOUCH
-ztt() {
-	take $1 && touch $1.zig
-}
-
 # HELIX SHORTCUTS
 alias hh='hx ~/Haskell'
 alias hj='hx ~/Journal'
 alias hg='hx ~/go/src'
-alias hz='hx ~/Zig'
 alias zrc='hx ~/.zshrc'
 
 # GIT CLONE
