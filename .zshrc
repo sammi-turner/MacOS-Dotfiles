@@ -115,7 +115,6 @@ alias la='ls -A'
 # CHANGE DIRECTORY
 alias cdg='cd ~/go/src'
 alias cdh='cd ~/Haskell'
-alias cdo='cd ~/Odin'
 
 # GO COMMANDS
 alias gmi='go mod init'
@@ -134,7 +133,6 @@ htt() {
 # HELIX SHORTCUTS
 alias hh='hx ~/Haskell'
 alias hg='hx ~/go/src'
-alias ho='hx ~/Odin'
 alias zrc='hx ~/.zshrc'
 
 # GIT CLONE
