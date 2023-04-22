@@ -113,12 +113,9 @@ alias lst='ls | sort'
 alias la='ls -A'
 
 # CHANGE DIRECTORY
-alias cdh='cd ~/Haskell'
 alias cdg='cd ~/go/src'
-
-# ASTRO
-alias pca='pnpm create astro@latest'
-alias prd='pnpm run dev'
+alias cdh='cd ~/Haskell'
+alias cdz='cd ~/Zig'
 
 # GO COMMANDS
 alias gmi='go mod init'
@@ -133,6 +130,23 @@ hcr() {
 htt() {
 	take $1 && touch $1.hs
 }
+
+# ZIG COMPILE AND RUN
+zcr() {
+	zig run $1.zig && ./$1;
+}
+
+# ZIG TAKE AND TOUCH
+ztt() {
+	take $1 && touch $1.zig
+}
+
+# HELIX SHORTCUTS
+alias hh='hx ~/Haskell'
+alias hj='hx ~/Journal'
+alias hg='hx ~/go/src'
+alias hz='hx ~/Zig'
+alias zrc='hx ~/.zshrc'
 
 # GIT CLONE
 alias gcl='git clone'
