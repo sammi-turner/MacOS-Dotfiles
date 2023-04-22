@@ -131,9 +131,9 @@ htt() {
 	take $1 && touch $1.hs
 }
 
-# ZIG COMPILE AND RUN
-zcr() {
-	zig run $1.zig && ./$1;
+# ZIG RUN
+zr() {
+	zig run $1.zig
 }
 
 # ZIG TAKE AND TOUCH
