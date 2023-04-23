@@ -115,24 +115,44 @@ alias la='ls -A'
 # CHANGE DIRECTORY
 alias cdg='cd ~/go/src'
 alias cdh='cd ~/Haskell'
+alias cdo='cd ~/OCaml'
 
 # GO COMMANDS
 alias gmi='go mod init'
 alias gin='go install'
 
-# HASKELL COMPILE AND RUN
-hcr() {
-	ghc $1.hs && ./$1;
+# HASKELL NEW PROJECT
+hnp() {
+	take $1 && touch main.hs
 }
 
-# HASKELL TAKE AND TOUCH
-htt() {
-	take $1 && touch $1.hs
+# HASKELL COMPILE AND RUN
+alias hcr='ghc main.hs && ./main'
+
+# HASKELL COMPILE
+alias hc='ghc main.hs'
+
+# HASKELL RUN
+alias hr='./main.hs'
+
+# DUNE NEW PROJECT
+dnp() {
+	dune init project $1 && cd $1
 }
+
+# DUNE COMPILE AND RUN
+alias dcr='dune build && dune exec ./bin/main.exe'
+
+# DUNE COMPILE
+alias dc='dune build'
+
+# DUNE RUN
+alias dr='dune exec ./bin/main.exe'
 
 # HELIX SHORTCUTS
 alias hh='hx ~/Haskell'
 alias hg='hx ~/go/src'
+alias ho='hx ~/OCaml'
 alias zrc='hx ~/.zshrc'
 
 # GIT CLONE
