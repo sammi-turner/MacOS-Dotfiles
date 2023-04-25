@@ -154,6 +154,7 @@ alias hh='hx ~/Haskell'
 alias hg='hx ~/go/src'
 alias ho='hx ~/OCaml'
 alias zrc='hx ~/.zshrc'
+alias hxm='hx bin/main.ml'
 
 # GIT CLONE
 alias gcl='git clone'
