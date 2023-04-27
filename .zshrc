@@ -137,7 +137,7 @@ alias hr='./main.hs'
 
 # DUNE NEW PROJECT
 dnp() {
-	dune init project $1 && cd $1
+	dune init project $1 && cd $1 && dune build
 }
 
 # DUNE COMPILE AND RUN
