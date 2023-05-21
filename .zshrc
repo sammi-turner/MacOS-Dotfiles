@@ -236,8 +236,3 @@ get_gif() {
 	make_gif "$4";
 	rm "$4".mp4;
 }
-
-[ -f "/Users/sammiturner/.ghcup/env" ] && source "/Users/sammiturner/.ghcup/env" # ghcup-env
-
-# opam configuration
-[[ ! -r /Users/sammiturner/.opam/opam-init/init.zsh ]] || source /Users/sammiturner/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
