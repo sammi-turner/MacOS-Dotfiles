@@ -112,11 +112,6 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
-# CHANGE DIRECTORY
-alias cdg='cd ~/go/src'
-alias cdh='cd ~/Haskell'
-alias cdo='cd ~/OCaml'
-
 # GO COMMANDS
 alias gmi='go mod init'
 alias gin='go install'
@@ -148,13 +143,6 @@ alias dc='dune build'
 
 # DUNE RUN
 alias dr='dune exec ./bin/main.exe'
-
-# HELIX SHORTCUTS
-alias hh='hx ~/Haskell'
-alias hg='hx ~/go/src'
-alias ho='hx ~/OCaml'
-alias zrc='hx ~/.zshrc'
-alias hxm='hx bin/main.ml'
 
 # GIT CLONE
 alias gcl='git clone'
