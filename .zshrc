@@ -107,27 +107,36 @@ lsp() {
 # EXIT
 alias e='exit'
 
-# LS COMMANDS
+# OPEN THIS FILE IN HELIX
+alias zrc='hx .zshrc'
+
+# LS ALIASES
 alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
-# GO COMMANDS
+# GO ALIASES
 alias gmi='go mod init'
 alias gin='go install'
+alias gr='go run main.go'
+
+# GO NEW PROJECT
+gnp() {
+	take $1 && touch main.go
+}
+
+## C++ ALIASES
+alias run='./bin/main'
+alias mar='make && ./bin/main'
 
 # HASKELL NEW PROJECT
 hnp() {
 	take $1 && touch main.hs
 }
 
-# HASKELL COMPILE AND RUN
+# HASKELL ALIASES
 alias hcr='ghc main.hs && ./main'
-
-# HASKELL COMPILE
 alias hc='ghc main.hs'
-
-# HASKELL RUN
 alias hr='./main.hs'
 
 # DUNE NEW PROJECT
@@ -135,13 +144,9 @@ dnp() {
 	dune init project $1 && cd $1 && dune build
 }
 
-# DUNE COMPILE AND RUN
+# DUNE ALIASES
 alias dcr='dune build && dune exec ./bin/main.exe'
-
-# DUNE COMPILE
 alias dc='dune build'
-
-# DUNE RUN
 alias dr='dune exec ./bin/main.exe'
 
 # GIT CLONE
@@ -224,3 +229,8 @@ get_gif() {
 	make_gif "$4";
 	rm "$4".mp4;
 }
+
+[ -f "/Users/sammiturner/.ghcup/env" ] && source "/Users/sammiturner/.ghcup/env" # ghcup-env
+
+# opam configuration
+[[ ! -r /Users/sammiturner/.opam/opam-init/init.zsh ]] || source /Users/sammiturner/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
