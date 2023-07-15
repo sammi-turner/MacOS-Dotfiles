@@ -118,7 +118,7 @@ alias la='ls -A'
 
 # GO ALIASES
 alias gmi='go mod init'
-alias gin='go install'
+alias gg='go get'
 alias gr='go run main.go'
 
 # GO NEW PROJECT
