@@ -123,7 +123,7 @@ alias gr='go run main.go'
 
 # GO NEW PROJECT
 gnp() {
-	take $1 && touch main.go
+	take $1 && go mod init $1 && touch main.go
 }
 
 ## C++ ALIASES
