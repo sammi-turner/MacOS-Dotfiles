@@ -116,6 +116,11 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
+# SVELTEKIT ALIASES
+alias csa='pnpm create svelte@latest'
+alias pni='pnpm i'
+alias prd='pnpm run dev'
+
 # GO ALIASES
 alias gmi='go mod init'
 alias gg='go get'
