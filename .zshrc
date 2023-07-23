@@ -116,10 +116,17 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
-# SVELTEKIT ALIASES
-alias csa='pnpm create svelte@latest'
-alias pni='pnpm i'
+# PNPM
+alias pin='pnpm i'
 alias prd='pnpm run dev'
+
+# NEW SVELTEKIT PROJECT
+nsk() {
+	pnpm create svelte@latest $1;
+	cd $1
+	pnpm i;
+	pnpm run dev;
+}
 
 # GO ALIASES
 alias gmi='go mod init'
