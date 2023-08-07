@@ -1,5 +1,9 @@
 # MacOS-Dotfiles
 
+Simple configs.
+
+<br>
+
 ## To install "Oh My Zsh"
 
 Enter this command
@@ -9,6 +13,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ```
 
 Note that this will replace your existing .zshrc, so install it before adding the zsh config in this repo!
+
+<br>
 
 ## To install Homebrew
 
@@ -24,6 +30,8 @@ Then add brew to the PATH variable by making sure these lines are at the top of 
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
 ```
+
+<br>
 
 ## Checklist for a new machine
 
