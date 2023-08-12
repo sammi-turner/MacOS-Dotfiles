@@ -99,6 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # DEFAULT EDITOR
 export EDITOR='hx'
 
+# CREATE EXECUTABLE SCRIPT
+ces() {
+	touch $1 && chmod +x $1;
+}
+
 # LANGUAGE SERVER PROTOCOL
 lsp() {
   hx --grammar fetch;
