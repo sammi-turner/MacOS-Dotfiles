@@ -143,8 +143,9 @@ gnp() {
   take $1 && go mod init $1 && touch main.go
 }
 
-# JAVAC ALIAS
+# JAVA ALIASES
 alias jc='javac *.java'
+alias jm='java Main'
 
 ## C++ ALIASES
 alias run='./bin/main'
