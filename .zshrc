@@ -101,7 +101,7 @@ export EDITOR='hx'
 
 # CREATE EXECUTABLE SCRIPT
 ces() {
-	touch $1 && chmod +x $1;
+  touch $1 && chmod +x $1;
 }
 
 # LANGUAGE SERVER PROTOCOL
