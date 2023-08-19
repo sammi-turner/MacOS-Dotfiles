@@ -148,8 +148,8 @@ alias jc='javac *.java'
 alias jm='java Main'
 alias sc='scalac *.scala'
 alias sm='scala Main'
-alias gc='groovy *.groovy'
-alias gr='groovy Main'
+alias gc='groovyc *.groovy'
+alias gm='groovy Main'
 
 ## C++ ALIASES
 alias run='./bin/main'
