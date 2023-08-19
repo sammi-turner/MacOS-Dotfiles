@@ -144,7 +144,7 @@ gnp() {
 }
 
 # JVM ALIASES
-alias kc='kotlin Main.kt -include-runtime -d Main.jar'
+alias kc='kotlinc Main.kt -include-runtime -d Main.jar'
 alias jc='javac *.java && jar cvfe Main.jar Main *.class'
 alias jm='java -jar Main.jar'
 
