@@ -143,9 +143,13 @@ gnp() {
   take $1 && go mod init $1 && touch main.go
 }
 
-# SCALA ALIASES
+# JVM ALIASES
+alias jc='javac *.java'
+alias jm='java Main'
 alias sc='scalac *.scala'
 alias sm='scala Main'
+alias gc='groovy *.groovy'
+alias gr='groovy Main'
 
 ## C++ ALIASES
 alias run='./bin/main'
