@@ -144,12 +144,8 @@ gnp() {
 }
 
 # JVM ALIASES
-alias jc='javac *.java'
-alias jm='java Main'
-alias sc='scalac *.scala'
-alias sm='scala Main'
-alias gc='groovyc *.groovy'
-alias gm='groovy Main'
+alias kc='kotlinc 'Main.kt -include-runtime -d Main.jar'
+alias jm='java -jar Main.jar'
 
 ## C++ ALIASES
 alias run='./bin/main'
