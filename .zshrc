@@ -148,9 +148,11 @@ alias kc='kotlinc *.kt -include-runtime -d Main.jar'
 alias jc='javac *.java && jar cvfe Main.jar Main *.class'
 alias jm='java -jar Main.jar'
 
-## C++ ALIASES
+## MAKEFILE ALIASES
 alias run='./bin/main'
 alias mar='make && ./bin/main'
+alias mc='make compile'
+alias mr='make run'
 
 # HASKELL NEW PROJECT
 hnp() {
