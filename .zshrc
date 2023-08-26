@@ -104,6 +104,12 @@ ces() {
   touch $1 && chmod +x $1;
 }
 
+# CHANGES DIRECTORY AND OPENS TEXTMATE 
+mate() {
+	cd $1;
+	open -a TextMate $(pwd);
+}
+
 # LANGUAGE SERVER PROTOCOL
 lsp() {
   hx --grammar fetch;
