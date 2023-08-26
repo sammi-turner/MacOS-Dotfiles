@@ -1,4 +1,6 @@
-set linebreak	    
+set linebreak
+set syntax on
+
 set showmatch
 set visualbell
     
@@ -34,19 +36,3 @@ inoremap ( ()<ESC>i
 inoremap " ""<ESC>i
 inoremap ' ''<ESC>i
 inoremap { {<Cr>}<Esc>O
-
-" Commands
-nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-r> :RustFmt<CR>
-
-" Vim Plug
-call plug#begin()
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-sensible'
-Plug 'maxboisvert/vim-simple-complete'
-Plug 'sheerun/vim-polyglot'
-Plug 'rust-lang/rust.vim'
-Plug 'morhetz/gruvbox'
-call plug#end()
-
-colorscheme gruvbox
