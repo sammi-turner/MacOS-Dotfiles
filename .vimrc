@@ -1,8 +1,9 @@
-set linebreak
-set syntax on
+syntax on
+colorscheme habamax
 
+set belloff=all
+set linebreak
 set showmatch
-set visualbell
     
 set hlsearch	    
 set smartcase
@@ -26,10 +27,7 @@ set expandtab
 
 set undolevels=1000
 set backspace=indent,eol,start
-set termguicolors
-
-set number relativenumber
-set nu rnu
+set number
 
 " Delimiter pairs
 inoremap ( ()<ESC>i
