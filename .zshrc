@@ -97,29 +97,15 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # DEFAULT EDITOR
-export EDITOR='hx'
+export EDITOR='vim'
 
 # CREATE EXECUTABLE SCRIPT
 ces() {
-	touch $1 && chmod +x $1;
+  touch $1 && chmod +x $1;
 }
-
-# CHANGES DIRECTORY AND OPENS TEXTMATE 
-mate() {
-	cd $1 && open -a TextMate $(pwd);
-}
-
-# LANGUAGE SERVER PROTOCOL
-lsp() {
-	hx --grammar fetch;
-	hx --grammar build;
-}
-
-# EXIT
-alias e='exit'
 
 # OPEN THIS FILE IN HELIX
-alias zrc='hx .zshrc'
+alias zrc='vim .zshrc'
 
 # PNPM
 alias pin='pnpm i'
@@ -127,10 +113,10 @@ alias prd='pnpm run dev'
 
 # NEW SVELTEKIT PROJECT
 nsk() {
-	pnpm create svelte@latest $1;
-	cd $1
-	pnpm i;
-	pnpm run dev;
+  pnpm create svelte@latest $1;
+  cd $1
+  pnpm i;
+  pnpm run dev;
 }
 
 # LS ALIASES
@@ -145,7 +131,7 @@ alias gr='go run main.go'
 
 # GO NEW PROJECT
 gnp() {
-	take $1 && go mod init $1 && touch main.go
+  take $1 && go mod init $1 && touch main.go
 }
 
 # JVM ALIASES
@@ -159,7 +145,7 @@ alias mr='make run'
 
 # HASKELL NEW PROJECT
 hnp() {
-	take $1 && touch main.hs
+  take $1 && touch main.hs
 }
 
 # HASKELL ALIASES
@@ -169,7 +155,7 @@ alias hr='./main.hs'
 
 # DUNE NEW PROJECT
 dnp() {
-	dune init project $1 && cd $1 && dune build
+  dune init project $1 && cd $1 && dune build
 }
 
 # DUNE ALIASES
@@ -186,9 +172,9 @@ alias rmg='rm -rf .git'
 # GIT ADD-COMMIT-PUSH
 # The $1 parameter is the commit message.
 acp() {
-	git add .;
-	git commit -m $1;
-	git push;
+  git add .;
+  git commit -m $1;
+  git push;
 }
 
 # YT-DLP
@@ -204,7 +190,7 @@ alias neo='neofetch'
 # It generates a series of jpg images from an mp4 file.
 # Its $1 parameter is the file name.
 stills() {
-	ffmpeg -i "$1".mp4 thumb%04d.jpg -hide_banner
+  ffmpeg -i "$1".mp4 thumb%04d.jpg -hide_banner
 }
 
 # CLIP
@@ -216,7 +202,7 @@ stills() {
 # $3 is the clip duration in seconds.
 # $4 is the output file name.
 clip() {
-	ffmpeg -i "$1".mp4 -ss "$2" -t "$3" "$4".mp4
+  ffmpeg -i "$1".mp4 -ss "$2" -t "$3" "$4".mp4
 }
 
 # PLAY
@@ -227,21 +213,21 @@ clip() {
 # $2 is the end time.
 # $3 is the file name.
 play() {
-	ffplay -ss "$1" -t "$2" "$3".mp4
+  ffplay -ss "$1" -t "$2" "$3".mp4
 }
 
 # PRE GIF
 # This function uses ffmpeg.
 # It is a helper function called by get_gif.
 pre_gif() {
-	ffmpeg -i "$1".mp4 -ss "$2" -t "$3" -vf "fps=10,scale=640:-1" -an "$4".mp4
+  ffmpeg -i "$1".mp4 -ss "$2" -t "$3" -vf "fps=10,scale=640:-1" -an "$4".mp4
 }
 
 # MAKE GIF
 # This function uses ffmpeg and imagemagick.
 # It is a helper function called by get_gif.
 make_gif() {
-	ffmpeg -i "$1".mp4 -vf "fps=10,scale=640:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers optimize "$1".gif
+  ffmpeg -i "$1".mp4 -vf "fps=10,scale=640:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers optimize "$1".gif
 }
 
 # GET GIF
@@ -253,9 +239,9 @@ make_gif() {
 # $3 is the duration of the gif in seconds.
 # $4 is the gif file name.
 get_gif() {
-	pre_gif "$1" "$2" "$3" "$4";
-	make_gif "$4";
-	rm "$4".mp4;
+  pre_gif "$1" "$2" "$3" "$4";
+  make_gif "$4";
+  rm "$4".mp4;
 }
 
 [ -f "/Users/sammiturner/.ghcup/env" ] && source "/Users/sammiturner/.ghcup/env" # ghcup-env
