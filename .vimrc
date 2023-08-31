@@ -1,6 +1,7 @@
 syntax on
 colorscheme habamax
 
+set guifont=Menlo\ Regular:h15
 set mouse=a
 set belloff=all
 set linebreak
