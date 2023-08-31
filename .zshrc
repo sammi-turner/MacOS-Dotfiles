@@ -97,15 +97,18 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # DEFAULT EDITOR
-export EDITOR='vim'
+export EDITOR='mvim'
+
+# OPEN THIS FILE IN HELIX
+alias zrc='mvim .zshrc'
+
+# OPEN RANGER
+alias rr='ranger'
 
 # CREATE EXECUTABLE SCRIPT
 ces() {
   touch $1 && chmod +x $1;
 }
-
-# OPEN THIS FILE IN HELIX
-alias zrc='vim .zshrc'
 
 # PNPM
 alias pin='pnpm i'
