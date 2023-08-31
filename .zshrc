@@ -142,10 +142,15 @@ gnp() {
   take $1 && go mod init $1 && touch main.go
 }
 
-# JVM ALIASES
+# KOTLIN ALIASES
 alias kc='kotlinc *.kt -include-runtime -d Main.jar'
+alias kr='java -jar Main.jar'
+alias kcr='kotlinc *.kt -include-runtime -d Main.jar && java -jar Main.jar'
+
+# JAVA ALIASES
 alias jc='javac *.java && jar cvfe Main.jar Main *.class'
-alias jm='java -jar Main.jar'
+alias jr='java -jar Main.jar'
+alias jcr='javac *.java && jar cvfe Main.jar Main *.class && java -jar Main.jar'
 
 ## MAKEFILE ALIASES
 alias mc='make compile'
