@@ -1,32 +1,19 @@
 syntax on
 colorscheme habamax
 
+set mouse=a
 set belloff=all
 set linebreak
 set showmatch
-    
 set hlsearch	    
 set smartcase
 set ignorecase	    
-
 set incsearch
-set autoindent
-set expandtab	    
-
-set shiftwidth=4	
-set smartindent
-set smarttab
-   
-set softtabstop=4
-set ruler
-set cmdheight=2
-
-set tabstop=4
-set shiftwidth=4
 set expandtab
-
+set shiftwidth=4 smarttab	
+set cmdheight=2
+set tabstop=4
 set undolevels=1000
-set backspace=indent,eol,start
 set number
 
 " Delimiter pairs
