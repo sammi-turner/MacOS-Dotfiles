@@ -99,8 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # DEFAULT EDITOR
 export EDITOR='mvim'
 
-# OPEN THIS FILE IN HELIX
+# OPEN THIS FILE IN MACVIM
 alias zrc='mvim .zshrc'
+
+# CHANGE DIRECTORY AND OPEN MACVIM
+cdm() {
+  cd $1 && mvim;
+}
 
 # OPEN RANGER
 alias rr='ranger'
