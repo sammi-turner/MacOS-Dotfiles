@@ -16,9 +16,3 @@ set cmdheight=2
 set tabstop=4
 set undolevels=1000
 set number
-
-" Delimiter pairs
-inoremap ( ()<ESC>i
-inoremap " ""<ESC>i
-inoremap ' ''<ESC>i
-inoremap { {<Cr>}<Esc>O
