@@ -38,6 +38,7 @@ export PATH=/opt/homebrew/sbin:$PATH
 Install the following packages with homebrew
 
 ```
+macvim
 git
 ffmpeg
 yt-dlp
