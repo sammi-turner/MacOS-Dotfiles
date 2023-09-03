@@ -135,7 +135,7 @@ alias la='ls -A'
 # GO ALIASES
 alias gmi='go mod init'
 alias gg='go get'
-alias gr='go run main.go'
+alias gb='go build'
 
 # GO NEW PROJECT
 gnp() {
