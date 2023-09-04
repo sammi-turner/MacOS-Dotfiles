@@ -115,6 +115,10 @@ ces() {
   touch $1 && chmod +x $1;
 }
 
+#PYTHON3
+alias piu='pip3 install --upgrade pip'
+alias prr='pur -r requirements.txt'
+
 # PNPM
 alias pin='pnpm i'
 alias prd='pnpm run dev'
