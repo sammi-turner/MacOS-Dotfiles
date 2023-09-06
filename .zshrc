@@ -1,4 +1,5 @@
 # FILE PATHS
+export PATH=$PATH:/usr/local/opt/kotlin-native/bin
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
