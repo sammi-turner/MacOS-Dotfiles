@@ -182,6 +182,31 @@ alias dcr='dune build && dune exec ./bin/main.exe'
 alias dc='dune build'
 alias dr='dune exec ./bin/main.exe'
 
+# OCAMLBUILD
+# This function can be run with either zero parameters, or a list of dependencies
+ob() {
+  if [ $# -eq 0 ]; then
+    ocamlbuild -use-ocamlfind main.native
+  else
+    local pkgs="$*"
+    ocamlbuild -use-ocamlfind -pkgs "$pkgs" main.native
+  fi
+}
+
+# OCAMLBUILD AND RUN
+# This function can be run with either zero parameters, or a list of dependencies
+obr() {
+  if [ $# -eq 0 ]; then
+    ocamlbuild -use-ocamlfind main.native && ./main.native
+  else
+    local pkgs="$*"
+    ocamlbuild -use-ocamlfind -pkgs "$pkgs" main.native && ./main.native
+  fi
+}
+
+# RUN OCAMLBUILD BINARY
+alias rob='./main.native'
+
 # GIT CLONE
 alias gcl='git clone'
 
