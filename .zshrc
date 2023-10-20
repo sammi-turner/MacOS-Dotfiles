@@ -103,6 +103,11 @@ export EDITOR='mvim'
 # OPEN THIS FILE IN MACVIM
 alias zrc='mvim .zshrc'
 
+# LS ALIASES
+alias dots='ls -a | sort'
+alias lst='ls | sort'
+alias la='ls -A'
+
 # CHANGE DIRECTORY AND OPEN MACVIM
 cdm() {
   cd $1 && mvim;
@@ -116,27 +121,21 @@ ces() {
   touch $1 && chmod +x $1;
 }
 
+# C ALIASES
+alias gc='gcc *.c'
+alias gr='./a.out'
+alias gcr='gcc *.c && ,/a.out'
+
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
 alias prr='pur -r requirements.txt'
 alias dep='pip3 install -r requirements.txt'
+alias pra='python3 app.py'
 
-# PNPM
-alias pin='pnpm i'
-alias prd='pnpm run dev'
-
-# NEW SVELTEKIT PROJECT
-nsk() {
-  pnpm create svelte@latest $1;
-  cd $1
-  pnpm i;
-  pnpm run dev;
-}
-
-# LS ALIASES
-alias dots='ls -a | sort'
-alias lst='ls | sort'
-alias la='ls -A'
+# MOJO ALIASES
+alias mbr='mojo build app.mojo && ./app'
+alias mba='mojo build app.mojo'
+alias mra='./app'
 
 # GO ALIASES
 alias gmi='go mod init'
@@ -292,3 +291,7 @@ get_gif() {
 
 # opam configuration
 [[ ! -r /Users/sammiturner/.opam/opam-init/init.zsh ]] || source /Users/sammiturner/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# mojo configuration
+export MODULAR_HOME="/Users/sammiturner/.modular"
+export PATH="/Users/sammiturner/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
