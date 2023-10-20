@@ -124,7 +124,7 @@ ces() {
 # C ALIASES
 alias gc='gcc *.c'
 alias gr='./a.out'
-alias gcr='gcc *.c && ,/a.out'
+alias gcr='gcc *.c && ./a.out'
 
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
