@@ -121,10 +121,10 @@ ces() {
   touch $1 && chmod +x $1;
 }
 
-# C ALIASES
-alias gc='gcc *.c'
-alias gr='./a.out'
-alias gcr='gcc *.c && ./a.out'
+# C++ ALIASES
+alias gpp='g++ *.cpp -std=c++20 -lncurses'
+alias run='./a.out'
+alias gcr='g++ *.cpp -std=c++20 -lncurses && ./a.out'
 
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
