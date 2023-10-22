@@ -122,9 +122,9 @@ ces() {
 }
 
 # C++ ALIASES
-alias gpp='g++ *.cpp -std=c++20 -lncurses'
 alias run='./a.out'
-alias gcr='g++ *.cpp -std=c++20 -lncurses && ./a.out'
+alias gpp='g++ *.cpp -std=c++14 -lncurses'
+alias gcr='g++ *.cpp -std=c++14 -lncurses && ./a.out'
 
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
