@@ -121,10 +121,9 @@ ces() {
   touch $1 && chmod +x $1;
 }
 
-# C++ ALIASES
-alias run='./a.out'
-alias gpp='g++ *.cpp -std=c++14 -lncurses'
-alias gcr='g++ *.cpp -std=c++14 -lncurses && ./a.out'
+# GNU MAKE ALIASES
+alias run='./bin/main'
+alias mar='make && ./bin/main'
 
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
@@ -156,10 +155,6 @@ alias kcr='kotlinc *.kt -include-runtime -d Main.jar && java -jar Main.jar'
 alias jc='javac *.java && jar cvfe Main.jar Main *.class'
 alias jr='java -jar Main.jar'
 alias jcr='javac *.java && jar cvfe Main.jar Main *.class && java -jar Main.jar'
-
-## MAKEFILE ALIASES
-alias mc='make compile'
-alias mr='make run'
 
 # HASKELL NEW PROJECT
 hnp() {
