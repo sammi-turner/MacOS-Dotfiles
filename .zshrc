@@ -8,6 +8,8 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/opt/local/bin
 export PATH="$PATH:$HOME/.local/bin"
+export PATH=$PATH:$HOME/.composer/vendor/bin
+export PATH="$PATH:$HOME/flutter/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -290,3 +292,7 @@ get_gif() {
 # mojo configuration
 export MODULAR_HOME="/Users/sammiturner/.modular"
 export PATH="/Users/sammiturner/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export MOJO_PYTHON_LIBRARY="/opt/homebrew/bin/python3"
+
+# ruby configuration
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
