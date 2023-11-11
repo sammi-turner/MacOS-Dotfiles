@@ -127,6 +127,10 @@ ces() {
 alias run='./bin/main'
 alias mar='make && ./bin/main'
 
+# EXPO ALIASES
+alias cea='npx create-expo-app@latest'
+alias nri='npm run ios'
+
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
 alias prr='pur -r requirements.txt'
