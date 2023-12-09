@@ -110,14 +110,6 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
-# CHANGE DIRECTORY AND OPEN MACVIM
-cdm() {
-  cd $1 && mvim;
-}
-
-# OPEN RANGER
-alias rr='ranger'
-
 # CREATE EXECUTABLE SCRIPT
 ces() {
   touch $1 && chmod +x $1;
