@@ -2,7 +2,7 @@
 
 # MacOS-Dotfiles
 
-Very basic configs for zsh, vim and ranger.
+Very basic configs for zsh and macvim.
 
 <br>
 
