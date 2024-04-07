@@ -113,6 +113,11 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
+# CHANGE DIRECTORY AND OPEN MACVIM
+cdm() {
+  cd $1 && mvim;
+}
+
 # CREATE EXECUTABLE SCRIPT
 ces() {
   touch $1 && chmod +x $1;
@@ -122,9 +127,9 @@ ces() {
 alias run='./bin/main'
 alias mar='make && ./bin/main'
 
-# EXPO ALIASES
-alias cea='npx create-expo-app@latest'
-alias nri='npm run ios'
+# DENO ALIASES
+alias dra='deno run -A'
+alias dca='deno compile -A'
 
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
