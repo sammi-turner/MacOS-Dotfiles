@@ -1,5 +1,5 @@
 syntax on
-colorscheme habamax
+colorscheme lunaperche
 
 set guifont=Menlo\ Regular:h15
 set mouse=a
