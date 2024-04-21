@@ -1,6 +1,3 @@
-syntax on
-colorscheme lunaperche
-
 set guifont=Menlo\ Regular:h15
 set mouse=a
 set belloff=all
@@ -16,3 +13,7 @@ set cmdheight=2
 set tabstop=4
 set undolevels=1000
 set number
+set background=dark
+
+syntax on
+colorscheme lunaperche
