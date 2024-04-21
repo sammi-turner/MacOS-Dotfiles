@@ -128,8 +128,8 @@ alias run='./bin/main'
 alias mar='make && ./bin/main'
 
 # DENO ALIASES
-alias dra='deno run -A'
-alias dca='deno compile -A'
+alias dra='deno run -A index.js'
+alias dca='deno compile -A index.js'
 
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
