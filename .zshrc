@@ -127,9 +127,9 @@ ces() {
 alias run='./bin/main'
 alias mar='make && ./bin/main'
 
-# DENO ALIASES
-alias dra='deno run -A index.js'
-alias dca='deno compile -A index.js'
+# TYPESCRIPT ALIASES
+alias bri='bun run index.ts'
+alias tni='ts-node index.ts'
 
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
