@@ -128,6 +128,7 @@ alias run='./bin/main'
 alias mar='make && ./bin/main'
 
 # TYPESCRIPT ALIASES
+alias bbi='bun build ./index.ts --compile --outfile'
 alias bri='bun run index.ts'
 alias tni='ts-node index.ts'
 
