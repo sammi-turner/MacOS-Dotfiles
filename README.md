@@ -49,5 +49,4 @@ git
 ffmpeg
 yt-dlp
 node
-pnpm
 ```
