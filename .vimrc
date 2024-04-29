@@ -16,4 +16,4 @@ set number
 set background=dark
 
 syntax on
-colorscheme lunaperche
+colorscheme sorbet
