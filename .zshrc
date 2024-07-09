@@ -123,10 +123,6 @@ ces() {
   touch $1 && chmod +x $1;
 }
 
-# GNU MAKE ALIASES
-alias run='./bin/main'
-alias mar='make && ./bin/main'
-
 # TYPESCRIPT ALIASES
 alias bbi='bun build ./index.ts --compile --outfile'
 alias bri='bun run index.ts'
@@ -172,6 +168,11 @@ hnp() {
 alias hcr='ghc main.hs && ./main'
 alias hc='ghc main.hs'
 alias hr='./main.hs'
+
+# LDC2 COMPILER
+dlang() {
+  ldc2 *.d -of=$1;
+}
 
 # DUNE NEW PROJECT
 dnp() {
@@ -301,3 +302,10 @@ export MOJO_PYTHON_LIBRARY="/opt/homebrew/bin/python3"
 
 # ruby configuration
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# bun completions
+[ -s "/Users/sammiturner/.bun/_bun" ] && source "/Users/sammiturner/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
