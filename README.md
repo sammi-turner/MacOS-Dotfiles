@@ -44,9 +44,9 @@ Download the installer from [this page](https://www.macports.org/install.php) an
 Install the following packages with homebrew
 
 ```
+textmate
 macvim
 git
 ffmpeg
 yt-dlp
-node
 ```
