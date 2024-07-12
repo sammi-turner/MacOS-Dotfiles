@@ -33,6 +33,8 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
 ```
 
+<br>
+
 ## To install Mac Ports
 
 Download the installer from [this page](https://www.macports.org/install.php) and run it.
