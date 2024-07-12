@@ -103,20 +103,15 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # DEFAULT EDITOR
-export EDITOR='mvim'
+export EDITOR='mate'
 
-# OPEN THIS FILE IN MACVIM
-alias zrc='mvim .zshrc'
+# OPEN THIS FILE IN TEXTMATE
+alias zrc='mate .zshrc'
 
 # LS ALIASES
 alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
-
-# CHANGE DIRECTORY AND OPEN MACVIM
-cdm() {
-  cd $1 && mvim;
-}
 
 # CREATE EXECUTABLE SCRIPT
 ces() {
