@@ -103,10 +103,10 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # DEFAULT EDITOR
-export EDITOR='mate'
+export EDITOR='zed'
 
-# OPEN THIS FILE IN TEXTMATE
-alias zrc='mate .zshrc'
+# OPEN THIS FILE IN ZED
+alias zrc='zed .zshrc'
 
 # LS ALIASES
 alias dots='ls -a | sort'
@@ -163,11 +163,6 @@ hnp() {
 alias hcr='ghc main.hs && ./main'
 alias hc='ghc main.hs'
 alias hr='./main.hs'
-
-# LDC2 COMPILER
-dlang() {
-  ldc2 *.d -of=$1;
-}
 
 # DUNE NEW PROJECT
 dnp() {
