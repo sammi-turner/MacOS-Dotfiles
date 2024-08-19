@@ -43,11 +43,16 @@ Download the installer from [this page](https://www.macports.org/install.php) an
 
 ## Checklist for a new machine
 
-Install the following packages with homebrew
+Install from the Zed website
 
 ```
 zed
 zed cli
+```
+
+Install the following packages with homebrew
+
+```
 git
 ffmpeg
 yt-dlp
