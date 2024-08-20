@@ -103,15 +103,22 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # DEFAULT EDITOR
-export EDITOR='zed'
+export EDITOR='mate'
 
-# OPEN THIS FILE IN ZED
-alias zrc='zed .zshrc'
+# OPEN THIS FILE IN TEXTMATE
+alias zrc='mate .zshrc'
 
 # LS ALIASES
 alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
+
+# DLANG NEW PROJECT
+dnew() {
+	mkdir $1;
+	cd $1;
+	dub init -n;
+}
 
 # CREATE EXECUTABLE SCRIPT
 ces() {
