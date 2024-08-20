@@ -120,6 +120,9 @@ dnew() {
 	dub init -n;
 }
 
+# DLANG RELEASE BUILD
+alias drel='dub build --build=release'
+
 # CREATE EXECUTABLE SCRIPT
 ces() {
   touch $1 && chmod +x $1;
