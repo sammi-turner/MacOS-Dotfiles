@@ -13,6 +13,7 @@ export PATH="$PATH:$HOME/flutter/bin"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export HAXE_STD_PATH="/opt/homebrew/lib/haxe/std"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
