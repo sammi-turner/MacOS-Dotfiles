@@ -129,6 +129,9 @@ ces() {
   touch $1 && chmod +x $1;
 }
 
+# ALIAS TO RYOR SCRIPT IN HOME FOLDER
+alias ry='~/ryor.rb'
+
 # TYPESCRIPT ALIASES
 alias bbi='bun build ./index.ts --compile --outfile'
 alias bri='bun run index.ts'
