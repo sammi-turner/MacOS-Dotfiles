@@ -143,11 +143,6 @@ alias prr='pur -r requirements.txt'
 alias dep='pip3 install -r requirements.txt'
 alias pra='python3 app.py'
 
-# MOJO ALIASES
-alias mbr='mojo build app.mojo && ./app'
-alias mba='mojo build app.mojo'
-alias mra='./app'
-
 # GO ALIASES
 alias gmi='go mod init'
 alias gg='go get'
@@ -298,11 +293,6 @@ get_gif() {
 
 # opam configuration
 [[ ! -r /Users/sammiturner/.opam/opam-init/init.zsh ]] || source /Users/sammiturner/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
-# mojo configuration
-export MODULAR_HOME="/Users/sammiturner/.modular"
-export PATH="/Users/sammiturner/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
-export MOJO_PYTHON_LIBRARY="/opt/homebrew/bin/python3"
 
 # ruby configuration
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
