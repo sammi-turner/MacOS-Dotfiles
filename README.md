@@ -2,7 +2,7 @@
 
 # MacOS-Dotfiles
 
-Very basic configs.
+My config files.
 
 <br>
 
