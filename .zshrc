@@ -137,6 +137,9 @@ alias bbi='bun build ./index.ts --compile --outfile'
 alias bri='bun run index.ts'
 alias tni='ts-node index.ts'
 
+# CREATE VITE PROJECT
+alias cvl='npm create vite@latest'
+
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
 alias prr='pur -r requirements.txt'
