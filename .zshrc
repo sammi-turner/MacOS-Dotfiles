@@ -135,6 +135,10 @@ alias ry='~/ryor.rb'
 # CREATE VITE PROJECT
 alias cvl='npm create vite@latest'
 
+# DENO ALIASES
+alias dra='deno run -A main.ts'
+alias draw='deno run -A --watch main.ts'
+
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
 alias prr='pur -r requirements.txt'
