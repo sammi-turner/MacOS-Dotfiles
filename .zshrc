@@ -132,11 +132,6 @@ ces() {
 # ALIAS TO RYOR SCRIPT IN HOME FOLDER
 alias ry='~/ryor.rb'
 
-# TYPESCRIPT ALIASES
-alias bbi='bun build ./index.ts --compile --outfile'
-alias bri='bun run index.ts'
-alias tni='ts-node index.ts'
-
 # CREATE VITE PROJECT
 alias cvl='npm create vite@latest'
 
