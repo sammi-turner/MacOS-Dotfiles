@@ -139,6 +139,11 @@ alias cvl='npm create vite@latest'
 alias dra='deno run -A main.ts'
 alias draw='deno run -A --watch main.ts'
 
+# DENO COMPILE
+dca() {
+  deno compile -A --output=$1 main.ts;
+}
+
 #PYTHON3 ALIASES
 alias piu='pip3 install --upgrade pip'
 alias prr='pur -r requirements.txt'
