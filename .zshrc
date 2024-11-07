@@ -144,12 +144,6 @@ dca() {
   deno compile -A --output=$1 main.ts;
 }
 
-#PYTHON3 ALIASES
-alias piu='pip3 install --upgrade pip'
-alias prr='pur -r requirements.txt'
-alias dep='pip3 install -r requirements.txt'
-alias pra='python3 app.py'
-
 # GO ALIASES
 alias gmi='go mod init'
 alias gg='go get'
