@@ -132,12 +132,10 @@ ces() {
 # ALIAS TO RYOR SCRIPT IN HOME FOLDER
 alias ry='~/ryor.rb'
 
-# CREATE VITE PROJECT
-alias cvl='npm create vite@latest'
-
 # DENO ALIASES
 alias dra='deno run -A main.ts'
 alias draw='deno run -A --watch main.ts'
+alias drt='deno run -A npm:create-vite@latest --template react-ts'
 
 # DENO COMPILE
 dca() {
