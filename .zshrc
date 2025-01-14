@@ -114,6 +114,9 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
+# LISP ALIASES
+alias lisp='rlwrap sbcl'
+
 # DLANG NEW PROJECT
 dnew() {
   mkdir $1;
