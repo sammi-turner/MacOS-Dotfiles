@@ -117,6 +117,9 @@ alias la='ls -A'
 # LISP ALIASES
 alias lisp='rlwrap sbcl'
 
+# NIM
+alias ncr='nim c -d:release main.nim'
+
 # DLANG NEW PROJECT
 dnew() {
   mkdir $1;
