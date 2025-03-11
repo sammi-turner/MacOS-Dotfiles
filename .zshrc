@@ -118,7 +118,8 @@ alias la='ls -A'
 alias lisp='rlwrap sbcl'
 
 # NIM
-alias ncr='nim c -d:release main.nim'
+alias nc='nim c -d:release main.nim'
+alias ncr='nim c -d:release main.nim && ./main'
 
 # DLANG NEW PROJECT
 dnew() {
