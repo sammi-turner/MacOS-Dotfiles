@@ -120,6 +120,8 @@ alias lisp='rlwrap sbcl'
 # NIM
 alias nc='nim c --hints:off main.nim'
 alias ncr='nim c -d:release --hints:off main.nim'
+alias ncjs='nim js --hints:off --out:app.js main.nim'
+alias ncrjs='nim js -d:release --hints:off --out:app.js main.nim'
 
 # DLANG NEW PROJECT
 dnew() {
