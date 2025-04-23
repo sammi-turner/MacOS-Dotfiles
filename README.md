@@ -50,6 +50,7 @@ git
 ffmpeg
 yt-dlp
 nvim
+tmux
 iterm2
 textmate
 ```
