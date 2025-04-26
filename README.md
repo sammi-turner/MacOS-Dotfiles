@@ -49,11 +49,9 @@ Install the following packages with homebrew
 git
 ffmpeg
 yt-dlp
-nvim
-tmux
+macvim
 iterm2
 textmate
 ```
 
-<br>
 <br>
