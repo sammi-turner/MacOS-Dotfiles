@@ -49,7 +49,7 @@ Install the following packages with homebrew
 git
 ffmpeg
 yt-dlp
-macvim
+wezterm
 iterm2
 textmate
 ```
