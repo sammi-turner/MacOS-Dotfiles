@@ -1,29 +1,55 @@
 local wezterm = require 'wezterm'
+local act = wezterm.action
 
 return {
-  -- Default shell (e.g., fish, zsh)
+  -- Your existing settings
   default_prog = { '/bin/zsh', '-l' },
-
-  -- Font settings
   font = wezterm.font_with_fallback({
     "Fira Code",
     "Noto Color Emoji",
-	  "Menlo"
+    "Menlo"
   }),
   font_size = 16,
-
-  -- Color scheme (see `wezterm color schemes`)
   color_scheme = "Dracula",
-
-  -- Tab bar customization
   enable_tab_bar = true,
   hide_tab_bar_if_only_one_tab = true,
-
-  -- Window padding
   window_padding = {
     left = 5,
     right = 5,
     top = 5,
     bottom = 5,
   },
+
+  -- Pane-focused keybinds (no tab operations)
+  disable_default_key_bindings = true,
+  keys = {
+    -- Pane Creation ------------------------------------------------------
+    { key = "|", mods = "CTRL|SHIFT", action = act.SplitVertical { domain = "CurrentPaneDomain" } },    -- Vertical split (Shift+\)
+    { key = "_", mods = "CTRL|SHIFT", action = act.SplitHorizontal { domain = "CurrentPaneDomain" } }, -- Horizontal split (Shift+-)
+
+    -- Pane Deletion ------------------------------------------------------
+    { key = "x", mods = "CTRL|SHIFT", action = act.CloseCurrentPane { confirm = true } },             -- Close current pane
+    { key = "X", mods = "CTRL|SHIFT", action = act.CloseCurrentPane { confirm = false } },            -- Force close pane
+
+    -- Pane Navigation ----------------------------------------------------
+    { key = "h", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection "Left" },                    -- Left pane
+    { key = "j", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection "Down" },                    -- Down pane
+    { key = "k", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection "Up" },                     -- Up pane
+    { key = "l", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection "Right" },                   -- Right pane
+
+    -- Pane Resizing ------------------------------------------------------
+    { key = "LeftArrow",  mods = "CTRL|SHIFT", action = act.AdjustPaneSize { "Left", 1 } },
+    { key = "RightArrow", mods = "CTRL|SHIFT", action = act.AdjustPaneSize { "Right", 1 } },
+    { key = "UpArrow",    mods = "CTRL|SHIFT", action = act.AdjustPaneSize { "Up", 1 } },
+    { key = "DownArrow",  mods = "CTRL|SHIFT", action = act.AdjustPaneSize { "Down", 1 } },
+
+    -- Pane Zoom/Focus ----------------------------------------------------
+    { key = "z", mods = "CTRL|SHIFT", action = act.TogglePaneZoomState },                             -- Zoom/unzoom pane
+    { key = "f", mods = "CTRL|SHIFT", action = act.ToggleFullScreen },                               -- Fullscreen current pane
+
+    -- Essential Operations -----------------------------------------------
+    { key = "r", mods = "CTRL|SHIFT", action = act.ReloadConfiguration },                            -- Reload config
+    { key = "c", mods = "CTRL|SHIFT", action = act.CopyTo "Clipboard" },                             -- Copy
+    { key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom "Clipboard" },                          -- Paste
+  }
 }
