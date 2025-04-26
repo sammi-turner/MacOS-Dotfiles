@@ -4,7 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 
 " Dracula color scheme
-Plug 'dracula/vim', { 'as': 'dracula' }
+" Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
@@ -26,4 +26,4 @@ set number
 set background=dark
 
 syntax on
-colorscheme dracula
+" colorscheme dracula
