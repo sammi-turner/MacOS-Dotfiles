@@ -51,7 +51,6 @@ git
 ffmpeg
 yt-dlp
 wezterm
-iterm2
 textmate
 ```
 
