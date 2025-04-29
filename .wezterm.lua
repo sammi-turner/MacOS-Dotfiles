@@ -10,7 +10,7 @@ return {
     "Menlo"
   }),
   font_size = 16,
-  color_scheme = "Dracula",
+  color_scheme = 'Gruvbox Dark (Gogh)',
   enable_tab_bar = true,
   hide_tab_bar_if_only_one_tab = true,
   window_padding = {
