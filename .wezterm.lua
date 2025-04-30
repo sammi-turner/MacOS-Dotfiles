@@ -9,15 +9,15 @@ return {
     "Noto Color Emoji",
     "Menlo"
   }),
-  font_size = 16,
-  color_scheme = 'Gruvbox Material (Gogh)',
+  font_size = 20,
+  color_scheme = 'Dark Violet (base16)',
   enable_tab_bar = true,
   hide_tab_bar_if_only_one_tab = true,
   window_padding = {
-    left = 5,
-    right = 5,
-    top = 5,
-    bottom = 5,
+    left = 12,
+    right = 12,
+    top = 12,
+    bottom = 12,
   },
 
   -- Disable default keybinds (as per your config)
@@ -53,8 +53,8 @@ return {
     { key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom "Clipboard" }, -- Paste
 
     -- Font Size Adjustments (New Additions) ------------------------------
-    { key = "[", mods = "CTRL|SHIFT", action = act.DecreaseFontSize }, -- Decrease font size (CTRL+SHIFT+[)
-    { key = "]", mods = "CTRL|SHIFT", action = act.IncreaseFontSize }, -- Increase font size (CTRL+SHIFT+])
-    { key = "0", mods = "CTRL|SHIFT", action = act.ResetFontSize }, -- Reset font size (CTRL+SHIFT+0)
+    { key = "[", mods = "CTRL|SHIFT", action = act.DecreaseFontSize },  -- Decrease font size (CTRL+SHIFT+[)
+    { key = "]", mods = "CTRL|SHIFT", action = act.IncreaseFontSize },  -- Increase font size (CTRL+SHIFT+])
+    { key = "0", mods = "CTRL|SHIFT", action = act.ResetFontSize },      -- Reset font size (CTRL+SHIFT+0)
   }
 }
