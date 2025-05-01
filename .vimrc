@@ -21,4 +21,8 @@ set undolevels=1000
 set number
 set background=dark
 
+" different cursor shapes
+let &t_SI = "\<Esc>[6 q"  " Thin bar in Insert
+let &t_EI = "\<Esc>[2 q"  " Block in Normal
+
 syntax on
