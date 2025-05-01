@@ -11,7 +11,6 @@ return {
   }),
   font_size = 20,
   color_scheme = 'Dark Violet (base16)',
-  enable_tab_bar = true,
   hide_tab_bar_if_only_one_tab = true,
   window_padding = {
     left = 12,
@@ -19,7 +18,7 @@ return {
     top = 12,
     bottom = 12,
   },
-
+  
   -- Disable default keybinds (as per your config)
   disable_default_key_bindings = true,
   keys = {
@@ -55,6 +54,6 @@ return {
     -- Font Size Adjustments (New Additions) ------------------------------
     { key = "[", mods = "CTRL|SHIFT", action = act.DecreaseFontSize },  -- Decrease font size (CTRL+SHIFT+[)
     { key = "]", mods = "CTRL|SHIFT", action = act.IncreaseFontSize },  -- Increase font size (CTRL+SHIFT+])
-    { key = "0", mods = "CTRL|SHIFT", action = act.ResetFontSize },      -- Reset font size (CTRL+SHIFT+0)
+    { key = "0", mods = "CTRL|SHIFT", action = act.ResetFontSize }, -- Reset font size (CTRL+SHIFT+0)
   }
 }
