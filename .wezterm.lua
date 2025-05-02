@@ -2,7 +2,6 @@ local wezterm = require 'wezterm'
 local act = wezterm.action
 
 return {
-  -- Your existing settings
   default_prog = { '/bin/zsh', '-l' },
   font = wezterm.font_with_fallback({
     "Fira Code",
@@ -12,6 +11,8 @@ return {
   font_size = 20,
   color_scheme = 'Dark Violet (base16)',
   hide_tab_bar_if_only_one_tab = true,
+  default_cursor_style = "BlinkingBar",
+  cursor_blink_rate = 500,
   window_padding = {
     left = 12,
     right = 12,
@@ -19,7 +20,6 @@ return {
     bottom = 12,
   },
   
-  -- Disable default keybinds (as per your config)
   disable_default_key_bindings = true,
   keys = {
     -- Pane Creation ------------------------------------------------------
