@@ -4,6 +4,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 " Add vim-rainbow for colored matching parentheses
 Plug 'frazrepo/vim-rainbow'
+" Add supertab for language agnostic tab completions
+Plug 'ervandew/supertab'
 call plug#end()
 
 " General settings
@@ -26,3 +28,6 @@ syntax on
 
 " vim-rainbow configuration
 let g:rainbow_active = 1  " Enable globally (works for Lisp, Clojure, etc.)
+
+" Use same completion in all contexts
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
