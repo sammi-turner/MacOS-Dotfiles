@@ -3,12 +3,7 @@ local act = wezterm.action
 
 return {
   default_prog = { '/bin/zsh', '-l' },
-  font = wezterm.font_with_fallback({
-    "Fira Code",
-    "Noto Color Emoji",
-    "Menlo"
-  }),
-  font_size = 20,
+  font_size = 18,
   color_scheme = 'Dark Violet (base16)',
   hide_tab_bar_if_only_one_tab = true,
   default_cursor_style = "BlinkingBar",
