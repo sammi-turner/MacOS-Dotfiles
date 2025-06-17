@@ -3,16 +3,15 @@ local act = wezterm.action
 
 return {
   default_prog = { '/bin/zsh', '-l' },
-  font_size = 18,
-  color_scheme = 'Dracula (Official)',
+  font_size = 16,
+  color_scheme = 'Catppuccin Mocha',
   hide_tab_bar_if_only_one_tab = true,
   default_cursor_style = "BlinkingBar",
   cursor_blink_rate = 500,
   window_padding = {
-    left = 12,
-    right = 12,
-    top = 12,
-    bottom = 12,
+    left = 18,
+    right = 18,
+    top = 20,
   },
   
   disable_default_key_bindings = true,
