@@ -114,7 +114,7 @@ alias dots='ls -a | sort'
 alias lst='ls | sort'
 alias la='ls -A'
 
-# LISP ALIASES
+# LISP
 alias lisp='rlwrap sbcl'
 
 # NIM
@@ -141,15 +141,8 @@ ces() {
 # ALIAS TO RYOR SCRIPT IN HOME FOLDER
 alias ry='~/ryor.rb'
 
-# DENO ALIASES
-alias dra='deno run -A main.ts'
-alias draw='deno run -A --watch main.ts'
-alias drt='deno run -A npm:create-vite@latest --template react-ts'
-
-# DENO COMPILE
-dca() {
-  deno compile -A --output=$1 main.ts;
-}
+# NEXT JS ALIAS
+alias cna='npx create-next-app@latest'
 
 # GO ALIASES
 alias gmi='go mod init'
@@ -311,3 +304,5 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="/Users/sammiturner/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/Users/sammiturner/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
