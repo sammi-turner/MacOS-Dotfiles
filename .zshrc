@@ -144,6 +144,29 @@ alias ry='~/ryor.rb'
 # NEXT JS ALIAS
 alias cna='npx create-next-app@latest'
 
+# NODE CLI STARTER
+ncs() {
+  mkdir -p "$1" && cd "$1" || return
+  npm init -y
+  # Use jq to modify package.json if npm pkg set doesn't work
+  if ! command -v jq &> /dev/null; then
+    echo "jq not found, using manual JSON editing"
+    sed -i '' '/"scripts": {/a\
+      "dev": "npx tsc index.ts --noEmitOnError && node index.js",\
+      "build": "npx tsc index.ts --noEmitOnError",\
+      "clean": "find src -name '\''*.js'\'' -exec rm {} +",' package.json
+  else
+    jq '.scripts += {
+      dev: "npx tsc index.ts --noEmitOnError && node index.js",
+      build: "npx tsc index.ts --noEmitOnError",
+      clean: "find src -name *.js -exec rm {} +"
+    }' package.json > tmp.json && mv tmp.json package.json
+  fi
+  npm i --save-dev typescript @types/node
+  npx tsc --init
+  echo 'console.log("Hello, world!");' > index.ts
+}
+
 # GO ALIASES
 alias gmi='go mod init'
 alias gg='go get'
