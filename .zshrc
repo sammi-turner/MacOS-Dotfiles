@@ -164,7 +164,8 @@ ncs() {
   fi
   npm i --save-dev typescript @types/node
   npx tsc --init
-  echo 'console.log("Hello, world!");' > index.ts
+  mkdir -p "src"
+  printf "%s" 'console.log("Hello, world!");' > "src/index.ts"
 }
 
 # GO ALIASES
