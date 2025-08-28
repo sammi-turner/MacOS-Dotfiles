@@ -123,6 +123,9 @@ alias ncr='nim c -d:release --hints:off main.nim'
 alias ncjs='nim js --hints:off --out:app.js main.nim'
 alias ncrjs='nim js -d:release --hints:off --out:app.js main.nim'
 
+# C++ SINGLE UNIT BUILD
+alias sub='g++ -std=c++20 -Wall -Wextra -O2 main.cpp'
+
 # DLANG NEW PROJECT
 dnew() {
   mkdir $1;
