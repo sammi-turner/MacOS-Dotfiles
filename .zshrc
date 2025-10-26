@@ -124,7 +124,7 @@ alias ncjs='nim js --hints:off --out:app.js main.nim'
 alias ncrjs='nim js -d:release --hints:off --out:app.js main.nim'
 
 # C++ SINGLE TRANSLATION UNIT
-alias stu='g++ -std=c++20 -Wall -Wextra -O2 main.cpp'
+alias stu='zig c++ -std=c++20 -Wall -Wextra -O2 main.cpp'
 
 # DLANG NEW PROJECT
 dnew() {
