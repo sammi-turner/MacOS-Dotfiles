@@ -4,7 +4,7 @@ local act = wezterm.action
 return {
   default_prog = { '/bin/zsh', '-l' },
   font_size = 16,
-  color_scheme = 'Catppuccin Mocha',
+  color_scheme = 'Dracula',
   hide_tab_bar_if_only_one_tab = true,
   default_cursor_style = "BlinkingBar",
   cursor_blink_rate = 500,
