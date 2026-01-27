@@ -258,65 +258,6 @@ alias dmp3='yt-dlp -x --audio-format mp3'
 # NEOFETCH
 alias neo='neofetch'
 
-# STILLS
-# This function uses ffmpeg.
-# It generates a series of jpg images from an mp4 file.
-# Its $1 parameter is the file name.
-stills() {
-  ffmpeg -i "$1".mp4 thumb%04d.jpg -hide_banner
-}
-
-# CLIP
-# This function uses ffmpeg.
-# It produces an mp4 video from a larger mp4 file.
-# It has four parameters.
-# $1 is the input file name.
-# $2 is the start time in HH:MM:SS format.
-# $3 is the clip duration in seconds.
-# $4 is the output file name.
-clip() {
-  ffmpeg -i "$1".mp4 -ss "$2" -t "$3" "$4".mp4
-}
-
-# PLAY
-# This function uses ffmpeg.
-# It plays an mp4 video with the devices default media player.
-# It has three parameters.
-# $1 is the start time.
-# $2 is the end time.
-# $3 is the file name.
-play() {
-  ffplay -ss "$1" -t "$2" "$3".mp4
-}
-
-# PRE GIF
-# This function uses ffmpeg.
-# It is a helper function called by get_gif.
-pre_gif() {
-  ffmpeg -i "$1".mp4 -ss "$2" -t "$3" -vf "fps=10,scale=640:-1" -an "$4".mp4
-}
-
-# MAKE GIF
-# This function uses ffmpeg and imagemagick.
-# It is a helper function called by get_gif.
-make_gif() {
-  ffmpeg -i "$1".mp4 -vf "fps=10,scale=640:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers optimize "$1".gif
-}
-
-# GET GIF
-# This function uses ffmpeg and imagemagick.
-# It converts a section of an mp4 video into a gif.
-# It has four parameters.
-# $1 is the mp4 file name.
-# $2 is the start time in HH:MM:SS format.
-# $3 is the duration of the gif in seconds.
-# $4 is the gif file name.
-get_gif() {
-  pre_gif "$1" "$2" "$3" "$4";
-  make_gif "$4";
-  rm "$4".mp4;
-}
-
 [ -f "/Users/sammiturner/.ghcup/env" ] && source "/Users/sammiturner/.ghcup/env" # ghcup-env
 
 # opam configuration
